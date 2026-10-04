@@ -1,0 +1,1074 @@
+[
+    {
+        "number": 1,
+        "text": "What is the default factor in STP that determines the cost of the path associated with a link?",
+        "options": [
+            "the duplex of the link",
+            "the type of link",
+            "the speed of the link",
+            "the bridge priority"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 2,
+        "text": "Which of these is the calculation used to determine the root port in the spanning-tree calculation?",
+        "options": [
+            "the first port that becomes active",
+            "the port with the fastest speed",
+            "the port with the lowest cost to the root",
+            "the port that the neighbor switch will forward traffic to"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 3,
+        "text": "Which option is the first criteria in MST used to choose the best path to the root bridge?",
+        "options": [
+            "lowest sender BID",
+            "highest BID",
+            "lowest root path cost",
+            "lowest sender port ID"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 4,
+        "text": "Which command will allow an administrator to view which MAC addresses are mapped to which ports on a Cisco Catalyst switch?",
+        "options": [
+            "show address-table",
+            "show mac address-table",
+            "show mac-address table",
+            "show address table"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 5,
+        "text": "Which option is not an RSTP port state?",
+        "options": [
+            "learning",
+            "blocking",
+            "discarding",
+            "forwarding"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 6,
+        "text": "What does a host without a dynamic routing protocol do when the only default gateway it has configured is unreachable?",
+        "options": [
+            "It performs ARP to determine the next gateway to use.",
+            "It forwards packets to the backup router.",
+            "It uses Cisco Discovery Protocol to determine the next available router.",
+            "It is unable to send packets off the local network segment."
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 7,
+        "text": "Which two of the following commands can be used to check the status of the member interfaces and the logical channel interface? (Choose two.)",
+        "options": [
+            "show etherchannel group-number detail",
+            "show ip interface brief",
+            "show etherchannel load-balance",
+            "show etherchannel traffic",
+            "show etherchannel summary"
+        ],
+        "correct": [
+            0,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 8,
+        "text": "Which statement about QoS trust boundaries or domains is true?",
+        "options": [
+            "The trust boundary is always a router.",
+            "The IP phone is a common trust boundary.",
+            "The service provider and the enterprise network need to be one single trust domain or else routing will not work.",
+            "PCs, printers, and tablets are usually part of a trusted domain."
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 9,
+        "text": "Place the steps to configure EtherChannel in the correct order.",
+        "options": [
+            "Identify the ports to use on each switch",
+            "Configure the channel group on the interface",
+            "Configure the port channel interface",
+            "Verify connectivity"
+        ],
+        "correct": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [
+            [
+                "Step 1",
+                "Identify the ports to use on each switch"
+            ],
+            [
+                "Step 2",
+                "Configure the channel group on the interface"
+            ],
+            [
+                "Step 3",
+                "Configure the port channel interface"
+            ],
+            [
+                "Step 4",
+                "Verify connectivity"
+            ]
+        ],
+        "ordering": true
+    },
+    {
+        "number": 10,
+        "text": "Which command can be used to set the aging time of entries in the MAC address table?",
+        "options": [
+            "address-table [time] aging-time",
+            "mac address-table aging-time [time]",
+            "mac aging-time [time]",
+            "address-table aging-time [time]",
+            "mac address-table [time] aging-time"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 11,
+        "text": "Assuming interface FastEthernet 0/3 is up, which two commands would allow you to verify that the interface is set to trunk mode? (Choose two.)",
+        "options": [
+            "show interface trunk",
+            "show interface FastEthernet0/3 switchport",
+            "show vlan all",
+            "show interface vlan",
+            "show interface FastEthernet0/3"
+        ],
+        "correct": [
+            0,
+            1
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 12,
+        "text": "Which redundancy mode on Catalyst switches has the effect of the standby module reloading every other module and initializing all supervisor functions?",
+        "options": [
+            "RPR",
+            "HSRP",
+            "RPR+",
+            "VRRP",
+            "SSO"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 13,
+        "text": "Which advanced classification tool can be used to classify data applications?",
+        "options": [
+            "PDLM",
+            "ToS",
+            "NBAR",
+            "DSCP"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 14,
+        "text": "What is the correct command for configuring load balancing on an EtherChannel link?",
+        "options": [
+            "Switch(config)# port-channel load-balance method",
+            "Switch(config-if)# port-channel number load-balance method",
+            "Switch(config)# channel-group number load-balance method",
+            "Switch(config-if)# channel-group number load-balance method"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 15,
+        "text": "Match the question with the task that involves QoS policies.",
+        "options": [
+            "Define classes of traffic",
+            "Define QoS policies for classes",
+            "Apply a service policy"
+        ],
+        "correct": [
+            0,
+            1,
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [
+            [
+                "Define classes of traffic",
+                "Which traffic do we care about?"
+            ],
+            [
+                "Define QoS policies for classes",
+                "What will be done to this traffic?"
+            ],
+            [
+                "Apply a service policy",
+                "Where will this policy be implemented?"
+            ]
+        ],
+        "matching": [
+            "Which traffic do we care about?",
+            "What will be done to this traffic?",
+            "Where will this policy be implemented?"
+        ],
+        "ordering": false
+    },
+    {
+        "number": 16,
+        "text": "Which two of the following options correctly define the characteristics for EtherChannel? (Choose two.)",
+        "options": [
+            "high bandwidth",
+            "load sharing across links",
+            "low convergence timing",
+            "server scalability",
+            "multiple logical ports for RSTP+"
+        ],
+        "correct": [
+            0,
+            1
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 17,
+        "text": "Which Cisco IOS router command would disable Cisco Express Forwarding on a specific interface?",
+        "options": [
+            "router(config)# no ip route-cache cef",
+            "router(config-if)# no ip cef",
+            "router(config)# no ip cef",
+            "router(config-if)# no ip route-cache cef"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 18,
+        "text": "Which two options are IEEE variants of STP? (Choose two.)",
+        "options": [
+            "MSTP",
+            "VRRP",
+            "RSTP",
+            "Rapid PVST+",
+            "PVST+"
+        ],
+        "correct": [
+            0,
+            2
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 19,
+        "text": "What is the default aging time, in seconds, for entries in the MAC address table on a Cisco Catalyst switch?",
+        "options": [
+            "1200",
+            "150",
+            "600",
+            "60",
+            "300"
+        ],
+        "correct": [
+            4
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 20,
+        "text": "Which layer should provide the highest switching speeds?",
+        "options": [
+            "none of the above",
+            "distribution",
+            "access",
+            "core"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 21,
+        "text": "Where is it best to deploy the root guard?",
+        "options": [
+            "Only access ports.",
+            "Ports that connect to switches that are root bridge.",
+            "All ports connecting switches.",
+            "Ports that connect to switches that should not be the root bridge."
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 22,
+        "text": "Which layer provides routing and implements policies (filtering, security, and QoS)?",
+        "options": [
+            "core",
+            "backbone",
+            "distribution",
+            "access"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 23,
+        "text": "Which command, when issued on a trunking interface, would set a VLAN that is not to be given an 802.1q tag?",
+        "options": [
+            "SW2(config-if)# switchport trunk native vlan 99",
+            "SW2(config-if)# switchport trunk no-tagging vlan 99",
+            "SW2(config-if)# switchport native vlan 99",
+            "SW2(config-if)# trunk native vlan 99"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 24,
+        "text": "Which option is a Layer 2 QoS marking?",
+        "options": [
+            "DSCP",
+            "QoS group",
+            "EXP",
+            "CoS"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 25,
+        "text": "Which table is used to make the decision on whether a frame should even be forwarded based on the frame being permitted in an ACL?",
+        "options": [
+            "CAM",
+            "MAC address table",
+            "IP Routing table",
+            "TCAM"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 26,
+        "text": "What cloud connectivity do organizations use to connect to a public cloud with a private connection?",
+        "options": [
+            "Direct Connect",
+            "Private Connect",
+            "MPLS Direct Connect",
+            "Cloud OnRamp"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Security: It provides an extra layer of security because the data is transferred over a private network rather than the public internet. Reliability: Because the internet can be unpredictable and prone to failures, using a private connection gives an organization more control over the reliability mechanisms it implements. Speed: Private connections typically allow for faster speeds than standard internet connections."
+    },
+    {
+        "number": 27,
+        "text": "Which inter-VLAN routing option uses a router with individual physical interfaces connected to a switchport configured as access ports in separate VLANs?",
+        "options": [
+            "router on a stick",
+            "Layer 3 switch",
+            "dynamic routing",
+            "Traditional inter-VLAN routing"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 28,
+        "text": "An end-user PC should be connected to which hierarchical layer?",
+        "options": [
+            "access",
+            "core",
+            "transport",
+            "distribution"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 29,
+        "text": "Which command would set an interface to trunk mode?",
+        "options": [
+            "interface mode trunk",
+            "switchport trunk active",
+            "switchport trunk",
+            "switchport mode trunk"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 30,
+        "text": "Which option is used to manage the automation of network device configuration?",
+        "options": [
+            "Cisco DNA Center",
+            "Cisco SD-WAN",
+            "Cisco SD-Access",
+            "Cisco vBond"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Cisco SD-Access uses automation specifically for orchestrating user and device policies (such as onboarding and segmentation) across a network fabric. Cisco SD-WAN is a secure, cloud-based architecture managed through the Cisco vManage console to establish overlay fabrics between different sites. Cisco DNA Center remains the primary solution for the overarching automation of the device configurations themselves within the Cisco Networking roadmap."
+    },
+    {
+        "number": 31,
+        "text": "Which load-balancing option on a Cisco Catalyst switch will use MAC addresses for load-balancing?",
+        "options": [
+            "src-dst-port",
+            "src-dst-name",
+            "src-dst-ip",
+            "src-dst-mac"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 32,
+        "text": "Which type of RSTP link type is full duplex and assumes that the port is connected to a single device at the other end of the link?",
+        "options": [
+            "shared",
+            "serial",
+            "multilink",
+            "point-to-point"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 33,
+        "text": "Which of these is the correct multicast address that VRRP uses to send advertisements?",
+        "options": [
+            "224.0.0.4",
+            "224.0.0.2",
+            "224.0.0.16",
+            "224.0.0.18"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 34,
+        "text": "How many layers are recommended in the hierarchical network design?",
+        "options": [
+            "3",
+            "1",
+            "2",
+            "4"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Access Layer: Used to grant user access to network devices and end systems like PCs and printers. Distribution Layer: Aggregates wiring closets, segments workgroups, and acts as a service and control boundary where routing, security policies, and QoS are implemented. Core Layer: Serves as the high-speed backbone for the campus, designed to switch packets as fast as possible with high availability."
+    },
+    {
+        "number": 35,
+        "text": "Which command can be used to verify the status of HSRP on the Cisco IOS router?",
+        "options": [
+            "show interface hsrp",
+            "show failover",
+            "show standby",
+            "show standby router",
+            "show hsrp"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 36,
+        "text": "Which three features are properties and one-way requirements for voice traffic? (Choose three.)",
+        "options": [
+            "The required bandwidth is roughly between 30 and 128 kbps.",
+            "The required bandwidth is roughly between 0.5 and 20 Mbps.",
+            "Latency should be below 400 ms.",
+            "Latency should be below 150 ms.",
+            "Voice traffic is smooth.",
+            "Voice traffic is bursty."
+        ],
+        "correct": [
+            0,
+            3,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 37,
+        "text": "Which two protocol choices do you have when you are implementing an EtherChannel bundle? (Choose two.)",
+        "options": [
+            "LAPD",
+            "PAgP",
+            "LACP",
+            "PADP",
+            "dot1Q"
+        ],
+        "correct": [
+            1,
+            2
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "LACP (Link Aggregation Control Protocol): This is part of an IEEE specification (802.3ad). Because it is a standard, it is used to facilitate EtherChannels in mixed-vendor environments. It ensures configuration consistency regarding speed, duplex settings, and VLAN information before bundling ports. PAgP (Port Aggregation Protocol): This is a Cisco proprietary protocol, meaning it only works on Cisco devices. It provides negotiation benefits similar to LACP by identifying neighbors and comparing port capabilities to ensure they match before forming the logical link."
+    },
+    {
+        "number": 38,
+        "text": "Which option is a congestion avoidance mechanism?",
+        "options": [
+            "QPM",
+            "WRED",
+            "LFI",
+            "MRF"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 39,
+        "text": "Which command can you use to verify the MST port cost for instance 1?",
+        "options": [
+            "show spanning-tree1",
+            "show spanning tree cost1",
+            "show spanning-tree mst 1",
+            "show spanning-tree mst instance 1"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "To verify the configuration and operational status of a specific Multiple Spanning Tree (MST) instance, including the port cost and port priority, use show spanning-tree mst <instance-id>. In MST, port parameters such as cost are configured and maintained per instance, so show spanning-tree mst 1 displays the role, status, cost, and priority for MST instance 1. The other commands do not follow the standard Cisco IOS syntax for MST verification.",
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 40,
+        "text": "Which option is the protocol that will prevent a bridging loop if BPDUs are received on an interface that has the STP calculation disabled?",
+        "options": [
+            "RSTP",
+            "BPDU guard",
+            "PortFast",
+            "MST"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 41,
+        "text": "Which option is the default priority for VRRP?",
+        "options": [
+            "110",
+            "1",
+            "255",
+            "100"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Master Election: The router with the highest priority is elected as the Master. If priorities are equal, the router with the highest IP address becomes the Master. Manual Configuration: Administrators can manually set the priority to a higher value (such as 110) to ensure a specific router becomes the Master for deterministic network behavior. IP Address Owner: If a router's actual physical IP address is used as the virtual IP address for the group, that router will automatically become the Master, and priorities are ignored in the election process. Verification: The current priority and state of a VRRP group can be verified using the show vrrp or show vrrp brief commands."
+    },
+    {
+        "number": 42,
+        "text": "How many bits constitute the DSCP field of the IP header?",
+        "options": [
+            "6 bits",
+            "8 bits",
+            "3 bits",
+            "4 bits"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 43,
+        "text": "Which two commands could be issued on R1 to verify the HSRP group, priority, and state of a Cisco IOS router? (Choose two.)",
+        "options": [
+            "show hsrp brief",
+            "show standby",
+            "show standby detail",
+            "show standby brief",
+            "show hsrp"
+        ],
+        "correct": [
+            1,
+            3
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "show standby: This command provides a detailed look at the HSRP status. It displays the HSRP group number, the current state (such as Active or Standby), the virtual IP and MAC addresses, and the priority of the router. It also includes information on timers and whether pre-emption is enabled. show standby brief: This command offers a condensed, tabular summary of the HSRP information. It is highly useful for quickly verifying the Group, Priority, State, and the IP addresses of the Active and Standby routers for all HSRP-enabled interfaces on the device."
+    },
+    {
+        "number": 44,
+        "text": "Which feature can be used to optimize the traffic path for a specific application?",
+        "options": [
+            "RSTP",
+            "PBR",
+            "uRPF",
+            "OSPF"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 45,
+        "text": "In HSRP, what are two possible states for the routers? (Choose two.)",
+        "options": [
+            "Standby",
+            "Active",
+            "Subordinate",
+            "Primary",
+            "Backup"
+        ],
+        "correct": [
+            0,
+            1
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Active Router: This router is responsible for forwarding packets sent to the virtual IP address and responding to ARP requests with the virtual MAC address. It periodically sends hello messages to inform other routers of its status. Standby Router: This router's main function is to monitor the operational status of the HSRP group. It listens for hello messages from the active router and is prepared to quickly assume packet-forwarding responsibility if the active router fails."
+    },
+    {
+        "number": 46,
+        "text": "Which command will allow you to verify that Cisco Express Forwarding is enabled on interface GigabitEthernet 0/0?",
+        "options": [
+            "show interface cef GigabitEthernet 0/0",
+            "show ip interface GigabitEthernet 0/0 cef",
+            "show ip interface cef",
+            "show ip interface GigabitEthernet 0/0"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 47,
+        "text": "Which statement about network core design is true?",
+        "options": [
+            "A collapsed core is a preferred design in big company networks.",
+            "The core layer is not needed unless you have IP telephony.",
+            "A dedicated core layer allows the campus to more easily accommodate growth.",
+            "A collapsed core is preferred to a design where the distribution layer is moved down to the access layer."
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 48,
+        "text": "From configuration mode, which command sequence would create VLAN 20 and name the VLAN Voice?",
+        "options": [
+            "SW1(config)# vlan 20 name Voice",
+            "SW1(config)# vlan name Voice SW1(config)# vlan number 20",
+            "SW1(config)# vlan name Voice number 20",
+            "SW1(config)# vlan 20 SW1(config-vlan)# name Voice",
+            "SW1(config)# vlan 20 creates the VLAN entry.",
+            "SW1(config-vlan)# name Voice assigns the name \"Voice\" to it."
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 49,
+        "text": "Which layer supports convergence for voice, wireless, and data?",
+        "options": [
+            "distribution",
+            "access",
+            "none of the above",
+            "core"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 50,
+        "text": "Which command would allow you to see all interfaces that are configured in trunk mode and the VLANs that are allowed on those trunk ports?",
+        "options": [
+            "show vlan detail",
+            "show vlan interfaces",
+            "show vlan brief",
+            "show interfaces trunk"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 51,
+        "text": "Which of these is an FHRP that Cisco designed to allow multiple active forwarders to load-balance outgoing traffic?",
+        "options": [
+            "VRRP",
+            "GLBP",
+            "OSPF",
+            "EIGRP",
+            "HSRP"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 52,
+        "text": "Which two actions on a Cisco router are functions of the control layer between the routing protocol and the firmware data plane microcode? (Choose two.)",
+        "options": [
+            "collecting the data plane information, such as traffic statistics, from the interface module to the route processor",
+            "allowing management access",
+            "managing the internal data and control circuits for the packet-forwarding and control functions",
+            "forwarding data packets"
+        ],
+        "correct": [
+            0,
+            2
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Managing internal circuits: The system must manage the internal data and control circuits required for both packet-forwarding and control functions. Collecting statistics: The control plane collects information from the data plane, such as traffic statistics, moving this data from the interface module to the route processor for monitoring and analysis. Conveying information: It extracts routing and forwarding-related control information from protocols and configuration data to convey it to the interface modules."
+    },
+    {
+        "number": 53,
+        "text": "Which two commands would set the authentication method for VRRP on an interface to use the key string Cisco123 (one command for MD5 authentication and one command for plaintext authentication)? (Choose two.)",
+        "options": [
+            "vrrp 1 authentication md5 key-string Cisco123",
+            "vrrp authentication md5 key Cisco123",
+            "vrrp 1 authentication text Cisco123",
+            "vrrp 1 authentication plaintext key-string Cisco123",
+            "vrrp authentication key-string Cisco123"
+        ],
+        "correct": [
+            0,
+            2
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Plaintext Authentication: The command used is vrrp [group-number] authentication text [key-string]. MD5 Authentication: The command used is vrrp [group-number] authentication md5 key-string [key-string]."
+    },
+    {
+        "number": 54,
+        "text": "Which Cisco switching mechanism requires a Cisco router to process all packets in the CPU?",
+        "options": [
+            "process switching",
+            "circuit switching",
+            "Cisco Express Forwarding",
+            "fast switching",
+            "pass-through switching"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Fast switching only requires the CPU to examine the first packet in a flow to create a cache for subsequent packets. Cisco Express Forwarding (CEF) is the fastest method and is less CPU-intensive because it uses hardware-based tables (FIB and adjacency tables) to switch all packets in a flow, including the first one, without needing to involve the CPU for each frame."
+    },
+    {
+        "number": 55,
+        "text": "Which of these is a VLAN that exists in the VLAN database and cannot be deleted?",
+        "options": [
+            "default VLAN 1",
+            "Native VLAN 99",
+            "Voice VLAN 20",
+            "default VLAN 99"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": []
+    },
+    {
+        "number": 56,
+        "text": "Which option is the default switching mode and uses information from tables that are built by the CPU, such as the routing table and the ARP table, to build hardware-based tables that are known as the FIB and adjacency tables?",
+        "options": [
+            "process switching",
+            "program-layered switching",
+            "Cisco Express Forwarding",
+            "fast switching"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Forwarding Information Base (FIB): Derived from the IP routing table, the FIB contains a mirrored set of the routing information and is optimized for fast destination lookups. Adjacency Table: Derived from the ARP table, this table stores the Layer 2 next-hop addresses and pre-computed frame header rewrite information for all entries in the FIB."
+    },
+    {
+        "number": 57,
+        "text": "Which two of the following are LACP EtherChannel modes? (Choose two.)",
+        "options": [
+            "on",
+            "passive",
+            "desirable",
+            "off",
+            "active",
+            "auto"
+        ],
+        "correct": [
+            1,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "desirable and auto are the operational modes for PAgP (Port Aggregation Protocol), which is a Cisco proprietary protocol. The on mode is used for static manual configuration, where the EtherChannel is forced to form without the use of any negotiation protocol like LACP or PAgP."
+    },
+    {
+        "number": 58,
+        "text": "Which QoS mechanism will drop traffic if a session uses more than the allotted bandwidth?",
+        "options": [
+            "policing",
+            "shaping",
+            "marking",
+            "congestion management"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "https://itexamanswers.net/wp-content/cache/flying-press/gravatar-3219dc815275.png",
+        "table": []
+    }
+]
