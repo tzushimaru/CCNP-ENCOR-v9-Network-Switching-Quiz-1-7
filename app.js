@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'network-switching-quiz-state';
+const STORAGE_KEY = 'network-switching-quiz-state-v4';
 const state = {
   questions: [], stages: [], stageIndex: 0, queue: [], current: 0,
   correct: 0, retry: 0, checked: false, selected: new Set(),
@@ -8,9 +8,13 @@ const state = {
 const el = id => document.getElementById(id);
 
 async function start() {
-  const response = await fetch('questions.json');
-  state.questions = await response.json();
-  state.stages = [[0, 20], [20, 40], [40, 58], [0, state.questions.length]];
+  const [questionsResponse, chaptersResponse] = await Promise.all([
+    fetch('questions.json'),
+    fetch('chapters.json')
+  ]);
+  if (!questionsResponse.ok || !chaptersResponse.ok) throw new Error('Soubor s otázkami nebo kapitolami není dostupný.');
+  state.questions = await questionsResponse.json();
+  state.stages = await chaptersResponse.json();
   restoreState();
   buildStageTabs();
   bindControls();
@@ -19,6 +23,7 @@ async function start() {
 
 function bindControls() {
   el('restart-button').onclick = () => loadStage(state.stageIndex);
+  el('chapter-menu-button').onclick = toggleChapterMenu;
   el('check-button').onclick = checkAnswer;
   el('skip-button').onclick = () => markRetry(true);
   el('overview-button').onclick = showOverview;
@@ -37,10 +42,56 @@ function bindControls() {
   });
 }
 
+function toggleChapterMenu() {
+  const button = el('chapter-menu-button');
+  const menu = el('stage-tabs');
+  const expanded = button.getAttribute('aria-expanded') === 'true';
+  button.setAttribute('aria-expanded', String(!expanded));
+  menu.hidden = expanded;
+}
+
 function buildStageTabs() {
-  el('stage-tabs').innerHTML = state.stages.map((range, index) => `<button class="stage-tab" data-stage="${index}" type="button">Blok ${index + 1}<br><small>${range[1] - range[0]} otázek</small></button>`).join('');
+  const chapters = [];
+  state.stages.forEach((stage, index) => {
+    const title = stage.category;
+    const existing = chapters[chapters.length - 1];
+    if (!existing || existing.title !== title) chapters.push({ title, modules: [] });
+    chapters[chapters.length - 1].modules.push({ stage, index });
+  });
+  el('stage-tabs').innerHTML = chapters.map((chapter, chapterIndex) => `
+    <section class="chapter-group" data-chapter="${chapterIndex}">
+      <button class="chapter-toggle" type="button" aria-expanded="false">
+        <span>${chapter.title}</span>
+        <small>${chapter.modules.length} částí</small>
+        <span class="chapter-chevron" aria-hidden="true">⌄</span>
+      </button>
+      <div class="module-list" hidden>
+        ${chapter.modules.map(({ stage, index }) => `<button class="stage-tab" data-stage="${index}" type="button">Část ${stage.part}<br><small>${stage.indexes.length} otázek</small></button>`).join('')}
+      </div>
+    </section>
+  `).join('');
+  document.querySelectorAll('.chapter-toggle').forEach(button => {
+    button.onclick = () => toggleChapter(button.closest('.chapter-group'));
+  });
   document.querySelectorAll('.stage-tab').forEach(button => button.onclick = () => loadStage(Number(button.dataset.stage)));
+  expandChapterForStage(state.stageIndex);
   updateTabs();
+}
+
+function toggleChapter(chapter) {
+  const button = chapter.querySelector('.chapter-toggle');
+  const modules = chapter.querySelector('.module-list');
+  const expanded = button.getAttribute('aria-expanded') === 'true';
+  button.setAttribute('aria-expanded', String(!expanded));
+  modules.hidden = expanded;
+  chapter.classList.toggle('expanded', !expanded);
+}
+
+function expandChapterForStage(stageIndex) {
+  const tab = document.querySelector(`.stage-tab[data-stage="${stageIndex}"]`);
+  if (!tab) return;
+  const chapter = tab.closest('.chapter-group');
+  if (chapter && chapter.querySelector('.module-list').hidden) toggleChapter(chapter);
 }
 
 function shuffle(items) {
@@ -54,8 +105,8 @@ function shuffle(items) {
 function loadStage(index, customQueue = null) {
   if (index >= state.stages.length) index = 0;
   state.stageIndex = index;
-  const [from, to] = state.stages[index];
-  let indexes = customQueue || Array.from({ length: to - from }, (_, offset) => from + offset);
+  const stage = state.stages[index];
+  let indexes = customQueue || [...stage.indexes];
   if (!customQueue && state.settings.onlyWrong) {
     const failed = state.failedByStage[index] || [];
     if (failed.length) indexes = failed;
@@ -63,6 +114,7 @@ function loadStage(index, customQueue = null) {
   state.queue = state.settings.randomQuestions ? shuffle([...indexes]) : [...indexes];
   state.current = 0; state.correct = 0; state.retry = 0; state.status = new Map();
   el('quiz-view').hidden = false; el('complete-view').hidden = true; el('overview-view').hidden = true;
+  expandChapterForStage(index);
   updateTabs(); saveState(); renderQuestion();
 }
 
@@ -119,7 +171,7 @@ function renderQuestion() {
 
 function updateProgress() {
   const total = state.queue.length;
-  el('stage-label').textContent = `Blok ${state.stageIndex + 1} z ${state.stages.length}`;
+  el('stage-label').textContent = `${state.stages[state.stageIndex].title} (${state.stageIndex + 1} z ${state.stages.length})`;
   el('progress-label').textContent = `${state.current} / ${total}`;
   el('progress-bar').style.width = `${state.current / total * 100}%`;
 }
@@ -215,7 +267,7 @@ function nextQuestion() { if (state.current < state.queue.length - 1) { state.cu
 function finishStage() {
   el('quiz-view').hidden = true; el('complete-view').hidden = false;
   el('complete-summary').textContent = `Správně bez opakování: ${state.correct}. Opakování: ${state.retry}.`;
-  el('next-stage-button').textContent = state.stageIndex === state.stages.length - 1 ? 'Začít znovu' : 'Pokračovat na další blok';
+  el('next-stage-button').textContent = state.stageIndex === state.stages.length - 1 ? 'Začít znovu' : 'Pokračovat na další kapitolu';
   el('retry-errors-button').hidden = !(state.failedByStage[state.stageIndex] || []).length; saveState();
 }
 function retryErrors() { const failed = state.failedByStage[state.stageIndex] || []; if (failed.length) loadStage(state.stageIndex, failed); }

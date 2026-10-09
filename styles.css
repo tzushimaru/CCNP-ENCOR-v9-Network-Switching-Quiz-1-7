@@ -147,9 +147,89 @@ h2 {
 
 .stage-tabs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 10px;
     margin-top: 16px;
+}
+
+.chapter-menu-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 10px 14px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    color: var(--ink);
+    background: var(--card);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.chapter-menu-button[aria-expanded="true"] {
+    color: var(--green);
+    border-color: var(--green);
+    background: var(--green-soft);
+}
+
+.hamburger-icon {
+    display: grid;
+    gap: 3px;
+    width: 18px;
+}
+
+.hamburger-icon i {
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+}
+
+.chapter-group {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--card);
+}
+
+.chapter-toggle {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    padding: 14px 16px;
+    border: 0;
+    color: var(--ink);
+    background: transparent;
+    text-align: left;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.chapter-toggle small {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.chapter-chevron {
+    color: var(--green);
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.chapter-group.expanded .chapter-chevron {
+    transform: rotate(180deg);
+}
+
+.module-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    padding: 0 10px 10px;
 }
 
 .stage-tab {
@@ -159,6 +239,7 @@ h2 {
     background: transparent;
     text-align: left;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .stage-tab.active {
@@ -468,6 +549,10 @@ h2 {
 
     .stage-tab {
         font-size: 12px;
+    }
+
+    .module-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .settings-panel {

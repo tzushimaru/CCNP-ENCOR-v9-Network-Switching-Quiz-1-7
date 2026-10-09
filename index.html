@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Network Switching Quiz</title>
+    <title>CCNP ENCOR v9 Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <header class="topbar">
             <div>
                 <p class="eyebrow">CCNP ENCOR v9</p>
-                <h1>Network Switching Quiz</h1>
+                <h1>CCNP ENCOR v9 Quiz</h1>
             </div>
             <button id="restart-button" class="button button-quiet" type="button">
                 Restart
@@ -26,7 +26,11 @@
             <div class="progress-track">
                 <span id="progress-bar"></span>
             </div>
-            <div id="stage-tabs" class="stage-tabs"></div>
+            <button id="chapter-menu-button" class="chapter-menu-button" type="button" aria-expanded="false" aria-controls="stage-tabs">
+                <span class="hamburger-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>Kapitoly a části</span>
+            </button>
+            <div id="stage-tabs" class="stage-tabs" hidden></div>
         </section>
 
         <section class="settings-panel" aria-label="Nastavení">
@@ -109,11 +113,11 @@
 
         <section id="complete-view" class="complete-view" hidden>
             <p class="eyebrow">Hotovo</p>
-            <h2>Blok je dokončený.</h2>
+            <h2>Kapitola je dokončená.</h2>
             <p id="complete-summary"></p>
             <div class="complete-actions">
                 <button id="next-stage-button" class="button button-primary" type="button">
-                    Pokračovat na další blok
+                    Pokračovat na další kapitolu
                 </button>
                 <button id="retry-errors-button" class="button button-outline" type="button" hidden>
                     Opakovat pouze chyby
