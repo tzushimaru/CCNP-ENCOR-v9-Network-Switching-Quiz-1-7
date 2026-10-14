@@ -180,9 +180,9 @@ function checkAnswer() {
   if (state.checked) return nextQuestion();
   const question = currentQuestion();
   if (question.special) return markRetry(false);
-  const correct = state.selected.size === question.correct.length && question.correct.every(answer => state.selected.has(answer));
   if (question.ordering) return checkOrderingAnswer(question);
   if (question.matching) return checkMatchingAnswer(question);
+  const correct = state.selected.size === question.correct.length && question.correct.every(answer => state.selected.has(answer));
   el('answer-form').querySelectorAll('.answer-option').forEach(label => {
     const index = Number(label.querySelector('input').value);
     if (question.correct.includes(index)) label.classList.add('correct');
@@ -223,10 +223,16 @@ function checkOrderingAnswer(question) {
 
 function checkMatchingAnswer(question) {
   const labels = [...el('answer-form').querySelectorAll('.matching-option')];
-  const values = labels.map(label => Number(label.querySelector('select').value));
-  const complete = values.every(value => Number.isInteger(value)) && new Set(values).size === question.options.length;
-  const correct = complete && labels.every(label => Number(label.querySelector('select').value) === Number(label.dataset.index));
-  labels.forEach(label => label.classList.add(correct || Number(label.querySelector('select').value) === Number(label.dataset.index) ? 'correct' : 'incorrect'));
+  const selectedValues = labels.map(label => label.querySelector('select').value);
+  const complete = selectedValues.every(value => value !== '') &&
+    new Set(selectedValues).size === question.options.length;
+  const correct = complete && labels.every((label, index) =>
+    Number(selectedValues[index]) === Number(label.dataset.index)
+  );
+  labels.forEach((label, index) => label.classList.add(
+    correct || (selectedValues[index] !== '' &&
+      Number(selectedValues[index]) === Number(label.dataset.index)) ? 'correct' : 'incorrect'
+  ));
   if (correct) {
     state.checked = true;
     state.correct++;

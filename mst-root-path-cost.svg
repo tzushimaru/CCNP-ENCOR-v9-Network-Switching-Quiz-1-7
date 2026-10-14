@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title description">
+  <title id="title">MST path selection</title>
+  <desc id="description">Two paths from Switch B to the root bridge are shown. The path through Switch A has cost 19 and is selected over the path through Switch C with cost 38.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker>
+    <style>
+      .device { fill: #e5e7eb; stroke: #374151; stroke-width: 2; }
+      .label { fill: #111827; font: 600 18px Arial, sans-serif; text-anchor: middle; }
+      .cost { font: 600 17px Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect width="760" height="360" rx="16" fill="#f8fafc"/>
+  <text x="380" y="34" class="label">MST path selection</text>
+  <text x="380" y="59" fill="#475569" font="16px Arial, sans-serif" text-anchor="middle">First criterion: lowest root path cost</text>
+  <line x1="165" y1="178" x2="355" y2="125" stroke="#2563eb" stroke-width="6" marker-end="url(#arrow)"/>
+  <line x1="165" y1="205" x2="355" y2="263" stroke="#94a3b8" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="405" y1="125" x2="595" y2="125" stroke="#2563eb" stroke-width="6" marker-end="url(#arrow)"/>
+  <line x1="405" y1="263" x2="595" y2="125" stroke="#94a3b8" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="35" y="155" width="130" height="72" rx="12" class="device"/>
+  <rect x="315" y="88" width="90" height="72" rx="12" class="device"/>
+  <rect x="315" y="227" width="90" height="72" rx="12" class="device"/>
+  <rect x="595" y="88" width="130" height="72" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="100" y="184" class="label">Switch B</text>
+  <text x="100" y="207" fill="#475569" font="14px Arial, sans-serif" text-anchor="middle">non-root</text>
+  <text x="360" y="117" class="label">Switch A</text>
+  <text x="360" y="140" fill="#475569" font="14px Arial, sans-serif" text-anchor="middle">cost 4</text>
+  <text x="360" y="256" class="label">Switch C</text>
+  <text x="360" y="279" fill="#475569" font="14px Arial, sans-serif" text-anchor="middle">cost 23</text>
+  <text x="660" y="117" class="label">Root bridge</text>
+  <text x="660" y="140" fill="#1d4ed8" font="14px Arial, sans-serif" text-anchor="middle">cost 15</text>
+  <rect x="215" y="105" width="74" height="30" rx="15" fill="#dbeafe"/>
+  <text x="252" y="126" class="cost" fill="#1d4ed8" text-anchor="middle">19</text>
+  <rect x="215" y="245" width="74" height="30" rx="15" fill="#e2e8f0"/>
+  <text x="252" y="266" class="cost" fill="#475569" text-anchor="middle">38</text>
+  <text x="380" y="334" fill="#1d4ed8" font="600 16px Arial, sans-serif" text-anchor="middle">Selected path: lowest root path cost (19)</text>
+</svg>

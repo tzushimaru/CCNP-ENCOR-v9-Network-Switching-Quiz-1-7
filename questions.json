@@ -55,7 +55,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "mst-root-path-cost.svg",
         "table": [],
         "explanation": "Topic 4.7.4 In Multiple Spanning Tree (MST), once the root bridge has been identified, every non-root device must determine the most efficient path to reach it. The protocol utilizes a specific hierarchical sequence of criteria for this calculation, with the lowest root path cost being the primary and first factor considered. This cost is determined by the cumulative bandwidth of the links leading back to the root bridge, where faster links result in lower costs. If and only if multiple paths share the same minimum cost, the protocol will then proceed to evaluate subsequent tie-breakers, which include the lowest sender Bridge ID (BID) and finally the lowest sender Port ID. By prioritizing the path cost first, MST ensures that data is forwarded through the highest-capacity route available while maintaining a loop-free topology."
     },
@@ -1233,7 +1233,7 @@
         ],
         "multi": true,
         "special": false,
-        "image": "",
+        "image": "question-61-bgp.png",
         "table": [],
         "explanation": ""
     },
@@ -1293,7 +1293,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "question-64-bgp-summary.png",
         "table": [],
         "explanation": ""
     },
@@ -1325,11 +1325,23 @@
         "chapter": "Network Routing",
         "chapterNumber": 8,
         "text": "Match the packet type with the proper function and description.",
-        "options": [],
-        "correct": [],
+        "options": [
+            "Contains a list of LSAs that need to be updated",
+            "Discovers and maintains neighbors",
+            "Ensures a reliable transmission of LSAs",
+            "Generated when the router does not have the current information in its database",
+            "Contains the LSA headers that help routers build the link-state database"
+        ],
+        "matching": [
+            "LSU",
+            "Hello",
+            "LSAck",
+            "LSR",
+            "DBD"
+        ],
         "multi": false,
-        "special": true,
-        "image": "sites/Modules 8 - 13_ Checkpoint Exam_ Network Routing Answers (CCNP ENCOR v9)_files/2026-05-01_114557.jpg",
+        "special": false,
+        "image": "",
         "table": [],
         "explanation": ""
     },
@@ -1413,7 +1425,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "question-70-bgp-remote-as.png",
         "table": [],
         "explanation": ""
     },
@@ -1474,7 +1486,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "question-73-ospf-router-id.png",
         "table": [],
         "explanation": ""
     },
