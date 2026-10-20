@@ -1,3 +1,5 @@
 FROM nginx:1.27-alpine
-COPY . /usr/share/nginx/html
+COPY index.html app.js styles.css chapters.json questions.json /usr/share/nginx/html/
+COPY images /usr/share/nginx/html/images
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
