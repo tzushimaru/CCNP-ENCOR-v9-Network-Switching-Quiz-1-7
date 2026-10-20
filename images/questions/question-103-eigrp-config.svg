@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680">
+  <rect width="900" height="680" fill="#ffffff"/>
+  <rect width="900" height="52" fill="#eeeeee"/>
+  <text x="24" y="34" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ R1 · Terminal</text>
+  <text x="28" y="94" fill="#16a34a" font-family="Consolas, monospace" font-size="18">R1#</text>
+  <text x="68" y="94" fill="#111111" font-family="Consolas, monospace" font-size="18">show ip protocols</text>
+  <text x="28" y="124" fill="#111111" font-family="Consolas, monospace" font-size="17">*** IP Routing is NSF aware ***</text>
+  <text x="28" y="178" fill="#111111" font-family="Consolas, monospace" font-size="17">Routing Protocol is "eigrp 65010"</text>
+  <text x="46" y="208" fill="#111111" font-family="Consolas, monospace" font-size="17">Outgoing update filter list for all interfaces is not set</text>
+  <text x="46" y="234" fill="#111111" font-family="Consolas, monospace" font-size="17">Incoming update filter list for all interfaces is not set</text>
+  <text x="46" y="260" fill="#111111" font-family="Consolas, monospace" font-size="17">Default networks flagged in outgoing updates</text>
+  <text x="46" y="286" fill="#111111" font-family="Consolas, monospace" font-size="17">Default networks accepted from incoming updates</text>
+  <text x="46" y="312" fill="#111111" font-family="Consolas, monospace" font-size="17">EIGRP-IPv4 Protocol for AS(65010)</text>
+  <text x="64" y="338" fill="#111111" font-family="Consolas, monospace" font-size="17">Metric weight K1=1, K2=0, K3=1, K4=0, K5=0</text>
+  <text x="64" y="364" fill="#111111" font-family="Consolas, monospace" font-size="17">NSF-aware route hold timer is 240</text>
+  <text x="64" y="390" fill="#111111" font-family="Consolas, monospace" font-size="17">Router-ID: 172.16.1.1</text>
+  <text x="64" y="416" fill="#111111" font-family="Consolas, monospace" font-size="17">Topology: 0 (base)</text>
+  <text x="82" y="442" fill="#111111" font-family="Consolas, monospace" font-size="17">Active Timer: 3 min</text>
+  <text x="82" y="468" fill="#111111" font-family="Consolas, monospace" font-size="17">Distance: internal 90 external 170</text>
+  <text x="82" y="494" fill="#111111" font-family="Consolas, monospace" font-size="17">Maximum path: 4</text>
+  <text x="82" y="520" fill="#111111" font-family="Consolas, monospace" font-size="17">Maximum hopcount 100</text>
+  <text x="82" y="546" fill="#111111" font-family="Consolas, monospace" font-size="17">Maximum metric variance 1</text>
+  <text x="64" y="572" fill="#111111" font-family="Consolas, monospace" font-size="17">Automatic Summarization: disabled</text>
+  <text x="64" y="598" fill="#111111" font-family="Consolas, monospace" font-size="17">Maximum path: 4</text>
+  <text x="64" y="624" fill="#111111" font-family="Consolas, monospace" font-size="17">Routing for Networks:</text>
+  <text x="64" y="650" fill="#111111" font-family="Consolas, monospace" font-size="17">Routing Information Sources:</text>
+</svg>

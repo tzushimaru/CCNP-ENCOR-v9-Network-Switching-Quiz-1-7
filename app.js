@@ -66,7 +66,7 @@ function buildStageTabs() {
         <span class="chapter-chevron" aria-hidden="true">⌄</span>
       </button>
       <div class="module-list" hidden>
-        ${chapter.modules.map(({ stage, index }) => `<button class="stage-tab" data-stage="${index}" type="button">Část ${stage.part}<br><small>${stage.indexes.length} otázek</small></button>`).join('')}
+        ${chapter.modules.map(({ stage, index }) => `<button class="stage-tab${stage.review ? ' review-stage' : ''}" data-stage="${index}" type="button">${stage.review ? 'Opakovací test' : `Část ${stage.part}`}<br><small>${stage.indexes.length} otázek</small></button>`).join('')}
       </div>
     </section>
   `).join('');
@@ -147,7 +147,7 @@ function renderQuestion() {
   const question = currentQuestion();
   if (!question) return finishStage();
   state.checked = false; state.selected = new Set();
-  el('question-number').textContent = `Otázka ${question.number}`;
+  el('question-number').textContent = `Otázka ${question.number} (${question.chapterNumber}. z ${question.chapter})`;
       el('question-type').textContent = question.ordering ? 'Seřaďte kroky do správného pořadí' : question.matching ? 'Přiřaďte správné dvojice' : question.multi ? 'Více správných odpovědí' : question.special ? 'Původní obrazová otázka' : 'Jedna správná odpověď';
   el('question-text').textContent = question.text;
   el('question-media').innerHTML = question.image ? `<img src="${question.image}" alt="">` : '';

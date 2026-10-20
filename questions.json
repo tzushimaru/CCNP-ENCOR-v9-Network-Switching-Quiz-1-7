@@ -55,7 +55,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "mst-root-path-cost.svg",
+        "image": "images/questions/mst-root-path-cost.svg",
         "table": [],
         "explanation": "Topic 4.7.4 In Multiple Spanning Tree (MST), once the root bridge has been identified, every non-root device must determine the most efficient path to reach it. The protocol utilizes a specific hierarchical sequence of criteria for this calculation, with the lowest root path cost being the primary and first factor considered. This cost is determined by the cumulative bandwidth of the links leading back to the root bridge, where faster links result in lower costs. If and only if multiple paths share the same minimum cost, the protocol will then proceed to evaluate subsequent tie-breakers, which include the lowest sender Bridge ID (BID) and finally the lowest sender Port ID. By prioritizing the path cost first, MST ensures that data is forwarded through the highest-capacity route available while maintaining a loop-free topology."
     },
@@ -170,7 +170,7 @@
         "correct": [],
         "multi": false,
         "special": true,
-        "image": "sites/Modules 1 - 7_ Checkpoint Exam_ Network Switching Answers (CCNP ENCOR v9)_files/2026-04-26_095127.jpg",
+        "image": "images/questions/question-9-network-switching.jpg",
         "table": [],
         "explanation": "Topic 6.4.0 Step 1 Identify the ports to use on each switch Step 2 Configure the channel group on the interface Step 3 Configure the port channel interface Step 4 Verify connectivity"
     },
@@ -283,11 +283,19 @@
         "chapter": "Network Switching",
         "chapterNumber": 15,
         "text": "Match the question with the task that involves QoS policies.",
-        "options": [],
-        "correct": [],
+        "options": [
+            "Define classes of traffic",
+            "Define QoS policies for classes",
+            "Apply a service policy"
+        ],
+        "matching": [
+            "Which traffic do we care about?",
+            "What will be done to this traffic?",
+            "Where will this policy be implemented?"
+        ],
         "multi": false,
-        "special": true,
-        "image": "sites/Modules 1 - 7_ Checkpoint Exam_ Network Switching Answers (CCNP ENCOR v9)_files/2026-04-26_095847.jpg",
+        "special": false,
+        "image": "",
         "table": [],
         "explanation": "Topic 7.5.1 Define classes of traffic Which traffic do we care about? Define QoS policies for classes What will be done to this traffic? Apply a service policy Where will this policy be implemented?"
     },
@@ -1233,7 +1241,7 @@
         ],
         "multi": true,
         "special": false,
-        "image": "question-61-bgp.png",
+        "image": "images/questions/question-61-bgp.png",
         "table": [],
         "explanation": ""
     },
@@ -1293,7 +1301,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "question-64-bgp-summary.png",
+        "image": "images/questions/question-64-bgp-summary.png",
         "table": [],
         "explanation": ""
     },
@@ -1425,7 +1433,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "question-70-bgp-remote-as.png",
+        "image": "images/questions/question-70-bgp-remote-as.png",
         "table": [],
         "explanation": ""
     },
@@ -1486,7 +1494,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "question-73-ospf-router-id.png",
+        "image": "images/questions/question-73-ospf-router-id.png",
         "table": [],
         "explanation": ""
     },
@@ -1952,17 +1960,16 @@
         "options": [
             "load",
             "delay",
-            "MTU",
             "reliability",
             "bandwidth"
         ],
         "correct": [
             1,
-            4
+            3
         ],
         "multi": true,
         "special": false,
-        "image": "",
+        "image": "images/questions/question-96-eigrp-metrics.svg",
         "table": [],
         "explanation": ""
     },
@@ -1970,14 +1977,24 @@
         "number": 97,
         "chapter": "Network Routing",
         "chapterNumber": 39,
-        "text": "Match the correct term with the description.",
-        "options": [],
-        "correct": [],
+        "text": "Which option correctly matches each term with its description?",
         "multi": false,
-        "special": true,
-        "image": "sites/Modules 8 - 13_ Checkpoint Exam_ Network Routing Answers (CCNP ENCOR v9)_files/2026-05-01_114418.jpg",
+        "special": false,
+        "image": "",
         "table": [],
-        "explanation": ""
+        "explanation": "Router interface = link; grouping of contiguous networks = area; collection of networks under a common administration = autonomous system; interface relationship to neighboring routers = state.",
+        "options": [
+            "Router interface",
+            "Collection of networks under a common administration",
+            "Interface relationship to neighboring routers",
+            "Grouping of contiguous networks"
+        ],
+        "matching": [
+            "Link",
+            "Autonomous system",
+            "State",
+            "Area"
+        ]
     },
     {
         "number": 98,
@@ -2103,7 +2120,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "images/questions/question-103-eigrp-config.svg",
         "table": [],
         "explanation": ""
     },
@@ -3299,13 +3316,20 @@
         "chapterNumber": 30,
         "text": "Different NTP restrictions can be configured through ACLs on Cisco devices. Match the restriction keyword with the restriction it applies.",
         "options": [
-            "CCNP ENCORv9",
-            "CCNP ENARSIv9"
+            "Time synchronization requests and control queries are allowed. The device is not allowed to synchronize itself to remote systems that pass the access list.",
+            "Time synchronization requests and control queries are allowed. The device is allowed to synchronize itself to remote systems that pass the access list.",
+            "This keyword only allows synchronization requests.",
+            "This keyword only allows control queries."
         ],
-        "correct": [],
+        "matching": [
+            "Serve",
+            "Peer",
+            "serve-only",
+            "query-only"
+        ],
         "multi": false,
         "special": false,
-        "image": "sites/Modules 17 - 20_ Checkpoint Exam_ Virtualization and Network Services Answers (CCNP ENCOR v9)_files/image2605.webp",
+        "image": "",
         "table": [],
         "explanation": "Topic 19.2.8 Time synchronization requests and control queries are allowed. The device is not allowed to synchronize itself to remote systems that pass the access list. Serve Time synchronization requests and control queries are allowed. The device is allowed to synchronize itself to remote systems that pass the access list. Peer This keyword only allows synchronization requests. serve-only This keyword only allows control queries. query-only"
     },
@@ -4086,11 +4110,21 @@
         "chapter": "Software-Defined Networking",
         "chapterNumber": 21,
         "text": "Match the Cisco SD-WAN component with the fabric plane to which it belongs:",
-        "options": [],
-        "correct": [],
+        "options": [
+            "Management",
+            "Orchestration",
+            "Data",
+            "Control"
+        ],
+        "matching": [
+            "Cisco vManage",
+            "Cisco vBond",
+            "Cisco WAN Edge",
+            "Cisco vSmart"
+        ],
         "multi": false,
-        "special": true,
-        "image": "sites/Modules 23 - 26_ Checkpoint Exam_ Software-Defined Networking Answers (CCNP ENCOR v9)_files/image2544.webp",
+        "special": false,
+        "image": "",
         "table": [],
         "explanation": "Topic 25.3.0 Management Cisco vManage Orchestration Cisco vBond Data Cisco WAN Edge Control Cisco vSmart"
     },

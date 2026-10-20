@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330">
+  <rect width="900" height="330" fill="#101820"/>
+  <text x="28" y="42" fill="#f2f5f7" font-family="Consolas, monospace" font-size="22">R1# show ip protocols</text>
+  <text x="28" y="82" fill="#c9d3d9" font-family="Consolas, monospace" font-size="18">Routing Protocol is "eigrp 100"</text>
+  <text x="28" y="116" fill="#c9d3d9" font-family="Consolas, monospace" font-size="18">  Outgoing update filter list for all interfaces is not set</text>
+  <text x="28" y="150" fill="#c9d3d9" font-family="Consolas, monospace" font-size="18">  Incoming update filter list for all interfaces is not set</text>
+  <text x="28" y="184" fill="#c9d3d9" font-family="Consolas, monospace" font-size="18">  EIGRP metric weight K1=1, K2=0, K3=1, K4=0, K5=0</text>
+  <text x="28" y="218" fill="#c9d3d9" font-family="Consolas, monospace" font-size="18">  EIGRP maximum hopcount 100</text>
+  <text x="28" y="252" fill="#c9d3d9" font-family="Consolas, monospace" font-size="18">  EIGRP maximum metric variance 1</text>
+  <text x="28" y="300" fill="#8ed081" font-family="Consolas, monospace" font-size="17">The default composite metric uses bandwidth and delay.</text>
+</svg>

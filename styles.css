@@ -437,6 +437,25 @@ h2 {
     background: #fff;
 }
 
+.matching-option {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.matching-option span {
+    flex: 1;
+}
+
+.matching-option select {
+    width: min(42%, 260px);
+    min-width: 170px;
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    color: var(--ink);
+    background: #fff;
+}
+
 .settings-panel {
     display: flex;
     align-items: center;
@@ -545,6 +564,16 @@ h2 {
 
     .question-card {
         padding: 23px 18px;
+    }
+
+    .matching-option {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .matching-option select {
+        width: 100%;
+        min-width: 0;
     }
 
     .stage-tab {
