@@ -2248,7 +2248,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "images/questions/question-109-acl.png",
         "table": [],
         "explanation": "Topic 14.3.2 To determine which line of the Access Control List (ACL) will cause the router to take action, you must analyze the traffic characteristics against the ACL entries in order from top to bottom: Identify the Traffic: The request is for a secure web page , which uses the HTTPS protocol. This corresponds to TCP port 443 . The source is 10.0.55.23 and the destination is 10.0.70.5 . Evaluate Line 1: access-list 100 permit tcp host 10.0.55.23 host 10.0.70.55 eq 1719. This is not a match because the destination host specified ( 10.0.70.55 ) does not match the actual destination ( 10.0.70.5 ), and the port ( 1719 ) does not match HTTPS ( 443 ). Evaluate Line 2: access-list 100 permit tcp host 10.0.55.23 host 10.0.70.55 eq 1720. Similar to Line 1, this is not a match due to the incorrect destination IP and port. Evaluate Line 3: access-list 100 deny tcp any any eq 443. This statement matches any source and any destination for TCP port 443 . Since the secure web request is destined for port 443, this line is a match. Because ACLs are processed sequentially and stop at the first match, the router will take action on Line 3 and deny (drop) the packet."
     },
@@ -2373,7 +2373,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "images/questions/question-115-acl.png",
         "table": [],
         "explanation": "Topic 14.6.2 Extended Access Control Lists (ACLs) provide granular control by allowing administrators to filter traffic based on Layer 4 protocols and port numbers . When configuring these ACLs, Cisco IOS allows the use of either a well-known port number or its corresponding application name. According to the sources, port 443 is the standard port used for HTTPS (Hypertext Transfer Protocol Secure). In the provided exhibit, the ACL named SURFING is configured to permit traffic from the 192.168.0.0/24 subnet to any destination if the traffic matches specific web protocols: Port 80 refers to HTTP (often displayed as the keyword www). Port 443 refers to HTTPS . Other protocols mentioned in the options use different ports: FTP typically uses port 21, and Telnet uses port 23. Thus, the line matching port 443 specifically targets secure web traffic."
     },
@@ -2413,7 +2413,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "images/questions/question-117-copp.png",
         "table": [],
         "explanation": "Topic 14.10.2 The behavior of Control Plane Policing (CoPP) depends on how traffic is classified within the Modular QoS CLI (MQC) framework. In this scenario, the class-map telnet-class uses access-list 100 to identify traffic for policing. In the context of CoPP classification, a \"deny\" statement in the referenced ACL does not mean the packet is dropped at the interface; instead, it means the packet is excluded from that specific class . According to the sources, when a packet matches a \"deny\" statement in the ACL, it will still be forwarded to the control plane, but it will not be policed by the actions defined in that class map. Because the first line of access-list 100 is deny tcp host 10.1.1.1 any eq telnet, Telnet traffic from host 10.1.1.1 is explicitly excluded from the telnet-class. Consequently, these packets bypass the police 80000 command and are granted unfettered access to the device’s control plane. This configuration is typically used to ensure that trusted hosts are never restricted by rate-limiting during high-traffic events or potential attacks."
     },
@@ -2597,7 +2597,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "images/questions/question-126-acl.png",
         "table": [],
         "explanation": "Topic 14.7.1 The output provided is characteristic of the show access-lists command. According to the sources, this command is used to display all configured access control lists (ACLs) on a router along with their hit counters . These hit counters, shown in the output as \"(4 match(es))\" or \"(8 match(es))\", indicate the number of packets that have matched a specific access control entry (ACE) since the counters were last cleared. The other options are incorrect for the following reasons: clear access-list counters : This command is used to reset the hit counters to zero for tuning purposes, rather than displaying them. show run | section access-list : This command displays the ACL configuration as it exists in the running configuration file, but it does not show dynamic operational data like hit counters. no access-list 1 : This is a configuration command used to delete an entire numbered ACL rather than display its status."
     },
