@@ -2773,7 +2773,7 @@
         ],
         "multi": false,
         "special": false,
-        "image": "",
+        "image": "images/questions/question-212-ip-sla-config.svg",
         "table": [],
         "explanation": "Topic 20.9.1 To successfully configure an IP SLA, you must first enter the IP SLA configuration mode by defining a unique operation number in global configuration mode. In your provided snippet, the scheduling command specifically references operation 33 (ip sla schedule 33...), meaning the missing command must be ip sla 33 to create that specific instance. Without this initial command, the device would not be in the correct sub-mode to accept the subsequent icmp-echo configuration."
     },
