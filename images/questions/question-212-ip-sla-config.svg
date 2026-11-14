@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270">
+  <rect width="900" height="270" fill="#ffffff"/>
+  <rect width="900" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Router · Terminal</text>
+  <text x="28" y="92" fill="#16a34a" font-family="Consolas, monospace" font-size="18">Router(config)#</text>
+  <text x="208" y="92" fill="#111111" font-family="Consolas, monospace" font-size="18">[MISSING COMMAND]</text>
+  <text x="64" y="136" fill="#111111" font-family="Consolas, monospace" font-size="18">icmp-echo 192.168.22.22</text>
+  <text x="28" y="190" fill="#16a34a" font-family="Consolas, monospace" font-size="18">Router(config)#</text>
+  <text x="208" y="190" fill="#111111" font-family="Consolas, monospace" font-size="18">ip sla schedule 33 life forever start-time now</text>
+</svg>

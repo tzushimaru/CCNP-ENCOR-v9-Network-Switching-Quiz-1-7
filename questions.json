@@ -4380,5 +4380,113 @@
         "image": "",
         "table": [],
         "explanation": "Topic 25.4.0 The Cisco Catalyst SD-WAN Validator (historically known as vBond ) resides on the orchestration plane and is responsible for initial security and connectivity. Its key characteristics include: First point of authentication: The Validator is the first point of contact for any device connecting to the SD-WAN overlay. It performs initial authentication for all devices to ensure they are authorized to join the network. Authorizing control connections: It uses a zero-trust certificate-based allow list model to authorize all control connections within the fabric. Distribution of controller lists: During the deployment process, the Validator automatically distributes a list of available Cisco Catalyst SD-WAN Controllers (vSmart) and the Cisco Catalyst SD-WAN Manager (vManage) to the WAN Edge routers. This enables the routers to establish the necessary control and management plane connections. Other options provided, such as facilitating fabric discovery , are characteristics of the Control Plane (vSmart), while real-time alerting is a feature of the Management Plane (SD-WAN Manager)."
+    },
+    {
+        "number": 212,
+        "chapter": "Praktické úlohy",
+        "chapterNumber": 1,
+        "text": "Prohlédněte si konfiguraci. Který příkaz chybí, aby bylo možné naplánovat IP SLA operaci s číslem 33?",
+        "options": [
+            "ip sla 33",
+            "ip sla responder 33",
+            "ip sla enable 33",
+            "ip sla monitor 33"
+        ],
+        "correct": [0],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/question-212-ip-sla-config.svg",
+        "table": [],
+        "explanation": "Příkaz ip sla schedule 33 odkazuje na operaci 33, která musí být nejdříve vytvořena příkazem ip sla 33. Teprve v jejím kontextu se zadává icmp-echo a následně se operace naplánuje."
+    },
+    {
+        "number": 213,
+        "chapter": "Praktické úlohy",
+        "chapterNumber": 2,
+        "text": "Prohlédněte si výstup show ip bgp. Co znamená označení *> u sítě 10.1.1.0/24?",
+        "options": [
+            "Trasa je platná a zároveň byla vybrána jako nejlepší.",
+            "Trasa je neplatná a čeká na přepočet.",
+            "Trasa byla potlačena a nebude vložena do RIB.",
+            "Trasa pochází výhradně z externího EGP."
+        ],
+        "correct": [0],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/question-61-bgp.png",
+        "table": [],
+        "explanation": "Legenda výstupu uvádí, že * znamená validní trasu a > nejlepší cestu. Kombinace *> tedy znamená validní a aktuálně nejlepší cestu."
+    },
+    {
+        "number": 214,
+        "chapter": "Praktické úlohy",
+        "chapterNumber": 3,
+        "text": "Z výstupu show ip bgp summary vyvoďte stav sousedství s 10.1.5.70.",
+        "options": [
+            "Sousedství je navázané a přijala se trasa.",
+            "Sousedství se právě pokouší navázat.",
+            "Sousedství nebylo navázáno; stav never znamená, že dosud nedošlo k výměně zpráv.",
+            "Sousedství je navázané, ale momentálně nepřijímá žádné trasy."
+        ],
+        "correct": [2],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/question-64-bgp-summary.png",
+        "table": [],
+        "explanation": "Hodnota never ve sloupci State/PfxRcd znamená, že BGP relace s uvedeným sousedem dosud nebyla navázána. Nejde o stav Established ani Active."
+    },
+    {
+        "number": 215,
+        "chapter": "Praktické úlohy",
+        "chapterNumber": 4,
+        "text": "Podle výstupu show ip protocols určete, proč EIGRP nepoužívá trasy s nestejnou cenou pro load balancing.",
+        "options": [
+            "Maximum path je nastaven na 0.",
+            "Variance je nastavena na 1, takže je povolena pouze stejná metrika.",
+            "Automatická sumarizace je vypnutá.",
+            "K1 a K3 jsou nastavené na nulu."
+        ],
+        "correct": [1],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/question-103-eigrp-config.svg",
+        "table": [],
+        "explanation": "Výstup obsahuje Maximum metric variance 1. Hodnota variance 1 ponechává pouze equal-cost load balancing; pro použití vhodných nestejně nákladných cest by byla potřeba vyšší hodnota."
+    },
+    {
+        "number": 216,
+        "chapter": "Praktické úlohy",
+        "chapterNumber": 5,
+        "text": "ACL je aplikována směrem ven a z hostitele 10.0.55.23 odchází požadavek HTTPS na server 10.0.70.5. Který řádek podle výstupu rozhodne o paketu?",
+        "options": [
+            "Řádek 1, protože povoluje TCP.",
+            "Řádek 2, protože odpovídá zdrojové adrese.",
+            "Řádek 3, protože zakazuje TCP na portu 443.",
+            "Implicitní deny na konci ACL."
+        ],
+        "correct": [2],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/question-109-acl.png",
+        "table": [],
+        "explanation": "HTTPS používá TCP port 443. Řádky ACL se zpracovávají shora dolů a první odpovídající řádek je řádek 3, který TCP na portu 443 zakazuje."
+    },
+    {
+        "number": 217,
+        "chapter": "Praktické úlohy",
+        "chapterNumber": 6,
+        "text": "Z výstupu EIGRP určete, které dvě metriky skutečně ovlivňují výpočet nejlepší cesty.",
+        "options": [
+            "Load",
+            "Delay",
+            "Reliability",
+            "Bandwidth"
+        ],
+        "correct": [1, 3],
+        "multi": true,
+        "special": false,
+        "image": "images/questions/question-96-eigrp-metrics.svg",
+        "table": [],
+        "explanation": "Řádek Metric weight K1=1, K2=0, K3=1, K4=0, K5=0 aktivuje bandwidth (K1) a delay (K3). Load a reliability mají nulové váhy, a proto se do výpočtu nezapočítávají."
     }
 ]
