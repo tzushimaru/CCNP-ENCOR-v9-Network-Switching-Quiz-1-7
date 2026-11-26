@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="248" viewBox="0 0 560 248">
+  <rect width="560" height="248" fill="#ffffff"/>
+  <rect width="560" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">SW1(config)#</tspan><tspan fill="#111111"> ip dhcp snooping</tspan></text>
+  <text x="28" y="110" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">SW1(config)#</tspan><tspan fill="#111111"> ip dhcp snooping vlan 10,20,30</tspan></text>
+  <text x="28" y="136" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">SW1(config)#</tspan><tspan fill="#111111"> interface GigabitEthernet0/1</tspan></text>
+  <text x="28" y="162" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">SW1(config-if)#</tspan><tspan fill="#111111"> ip dhcp snooping trust</tspan></text>
+  <text x="28" y="188" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">SW1(config-if)#</tspan><tspan fill="#111111"> interface range GigabitEthernet0/2-48</tspan></text>
+  <text x="28" y="214" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">SW1(config-if-range)#</tspan><tspan fill="#111111"> ip dhcp snooping limit rate 15</tspan></text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="248" viewBox="0 0 808 248">
+  <rect width="808" height="248" fill="#ffffff"/>
+  <rect width="808" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1#</tspan><tspan fill="#111111"> show ip bgp 10.0.0.0/8</tspan></text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">BGP routing table entry for 10.0.0.0/8, version 5</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Paths: (3 available, best #?)</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Path 1: AS_PATH: 65001 65002, NEXT_HOP: 192.168.1.1, MED: 100, LOCAL_PREF: 200</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Path 2: AS_PATH: 65001, NEXT_HOP: 192.168.2.1, MED: 50, LOCAL_PREF: 150</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Path 3: AS_PATH: 65001 65003, NEXT_HOP: 192.168.3.1, MED: 75, LOCAL_PREF: 200</text>
+</svg>

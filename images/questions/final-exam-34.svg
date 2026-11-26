@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="648" height="352" viewBox="0 0 648 352">
+  <rect width="648" height="352" fill="#ffffff"/>
+  <rect width="648" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1#</tspan><tspan fill="#111111"> show running-config | section line vty</tspan></text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">line vty 0 4</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> login local</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> transport input ssh</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> access-class 10 in</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">!</text>
+  <text x="28" y="240" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1#</tspan><tspan fill="#111111"> show access-lists 10</tspan></text>
+  <text x="28" y="266" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Standard IP access list 10</text>
+  <text x="28" y="292" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">    10 permit 192.168.1.0, wildcard bits 0.0.0.255 (15 matches)</text>
+  <text x="28" y="318" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">    20 deny any</text>
+</svg>

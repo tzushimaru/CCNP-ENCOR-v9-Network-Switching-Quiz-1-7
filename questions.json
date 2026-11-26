@@ -4488,5 +4488,1328 @@
         "image": "images/questions/question-96-eigrp-metrics.svg",
         "table": [],
         "explanation": "Řádek Metric weight K1=1, K2=0, K3=1, K4=0, K5=0 aktivuje bandwidth (K1) a delay (K3). Load a reliability mají nulové váhy, a proto se do výpočtu nezapočítávají."
+    },
+    {
+        "number": 218,
+        "chapter": "Final Exam",
+        "chapterNumber": 1,
+        "text": "An enterprise is planning to migrate some applications to a public cloud provider while keeping sensitive data on-premises. The network team must ensure secure, reliable connectivity between the on-premises data center and the cloud environment. Which two design considerations are essential for this hybrid cloud deployment? (Choose two.)",
+        "options": [
+            "Extending the on-premises Layer 2 VLANs directly into the cloud provider network",
+            "Replacing all on-premises firewalls with cloud-native security services",
+            "Implementing dedicated private connections such as Direct Connect for consistent performance and security",
+            "Using the same IP addressing scheme in the cloud as on-premises to simplify routing",
+            "Establishing redundant connectivity paths to avoid a single point of failure between on-premises and cloud"
+        ],
+        "correct": [
+            2,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 219,
+        "chapter": "Final Exam",
+        "chapterNumber": 2,
+        "text": "Which three components are part of the Cisco Catalyst SD-WAN control plane? (Choose three.)",
+        "options": [
+            "vBond orchestrator",
+            "vManage",
+            "IPsec tunnels",
+            "WAN Edge router",
+            "vSmart controller",
+            "OMP protocol"
+        ],
+        "correct": [
+            0,
+            4,
+            5
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 220,
+        "chapter": "Final Exam",
+        "chapterNumber": 3,
+        "text": "Refer to the exhibit. An engineer is troubleshooting HSRP on two distribution switches. Based on the output, what is the current state of the HSRP configuration?",
+        "options": [
+            "DSW2 is active because DSW1 has preempt disabled",
+            "DSW1 is active because it has the higher priority and preempt is enabled",
+            "Both switches are in active state causing a split-brain condition",
+            "The configuration is invalid because the virtual IP addresses do not match"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-03.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 221,
+        "chapter": "Final Exam",
+        "chapterNumber": 4,
+        "text": "Which statement correctly describes a benefit of the Cisco SD-Access solution?",
+        "options": [
+            "It requires all network devices to be upgraded to the latest hardware",
+            "It provides automated network segmentation based on user identity and group membership",
+            "It eliminates the need for any underlay network infrastructure",
+            "It replaces the need for Cisco ISE in enterprise deployments"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 1.5.3 Cisco SD-Access uses a single network fabric to automate user and device policies across wired and wireless networks. This design enables software-defined segmentation and policy enforcement that is dynamically based on user identity and group membership through integration with Cisco TrustSec, rather than traditional IP-based or VLAN-based methods. SD-Access requires a physical underlay network for connectivity and integrates with, rather than replaces, Cisco ISE for identity services."
+    },
+    {
+        "number": 222,
+        "chapter": "Final Exam",
+        "chapterNumber": 5,
+        "text": "Refer to the exhibit showing a QoS policy configuration. What is the effect of this policy on voice traffic?",
+        "options": [
+            "Voice traffic receives best-effort treatment with 10% minimum bandwidth",
+            "Voice traffic is guaranteed 10% bandwidth with low-latency queuing and policed to 10%",
+            "Voice traffic is dropped if it exceeds 10% of the bandwidth",
+            "Voice traffic is shaped to 10% of the interface bandwidth"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-05.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 223,
+        "chapter": "Final Exam",
+        "chapterNumber": 6,
+        "text": "Which two statements about Cisco SD-WAN vBond orchestrator are correct? (Choose two.)",
+        "options": [
+            "It serves as the first point of authentication for all SD-WAN components",
+            "It stores and distributes software images to WAN edge routers",
+            "It performs deep packet inspection for security",
+            "It maintains the centralized routing policy database",
+            "It must be reachable by all SD-WAN devices for initial fabric join"
+        ],
+        "correct": [
+            0,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 25.4.0 The SD-WAN Validator (vBond) is the first point of contact in the orchestration plane; it uses a zero-trust model to perform initial authentication and authorize all control connections for devices joining the fabric. To facilitate this onboarding process, it must reside in a reachable IP space (public or 1:1 NAT) so that all remote sites and controllers can connect to it; if the Validator is unreachable, no other device can join the overlay."
+    },
+    {
+        "number": 224,
+        "chapter": "Final Exam",
+        "chapterNumber": 7,
+        "text": "Which component of the SD-Access fabric is responsible for registering endpoint EID-to-RLOC mappings?",
+        "options": [
+            "Fabric edge node",
+            "Fabric border node",
+            "Intermediate node",
+            "Control plane node"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 24.4.5 The control plane node serves as the central mapping system for the fabric; it maintains the host tracking database (HTDB), which is a central repository that tracks all endpoints and stores their EID-to-RLOC mappings (associating endpoint IDs with their closest fabric node location). It uses LISP map-server functionality to populate this database using registration messages sent by fabric edge nodes when endpoints are onboarded."
+    },
+    {
+        "number": 225,
+        "chapter": "Final Exam",
+        "chapterNumber": 8,
+        "text": "Refer to the exhibit. A network engineer is analyzing traffic patterns on a WAN link. Based on the QoS marking, which traffic class should receive priority treatment during congestion?",
+        "options": [
+            "Flow 1 because DSCP EF is designated for expedited forwarding",
+            "Flow 2 because video requires more bandwidth than voice",
+            "Flow 4 because CS1 indicates high priority scavenger traffic",
+            "Flow 5 because it has the highest bandwidth consumption"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-08.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 226,
+        "chapter": "Final Exam",
+        "chapterNumber": 9,
+        "text": "A network engineer needs to create separate routing tables for different departments while using the same physical infrastructure. Which technology should be implemented?",
+        "options": [
+            "VLANs",
+            "VXLAN",
+            "VRF (Virtual Routing and Forwarding)",
+            "GRE tunneling"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 227,
+        "chapter": "Final Exam",
+        "chapterNumber": 10,
+        "text": "Refer to the exhibit. What does this VXLAN packet header indicate about the encapsulated traffic? (Choose four.)",
+        "options": [
+            "The inner frame's original Layer 2 headers are preserved",
+            "The outer source port 49152 indicates encrypted traffic",
+            "The VTEPs are using IP addresses for tunnel endpoints",
+            "UDP port 4789 is the standard VXLAN destination port",
+            "The traffic belongs to VXLAN segment 10010"
+        ],
+        "correct": [
+            0,
+            2,
+            3,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "images/questions/final-exam-10.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 228,
+        "chapter": "Final Exam",
+        "chapterNumber": 11,
+        "text": "Which statement correctly describes the relationship between LISP and SD-Access?",
+        "options": [
+            "LISP replaces VXLAN as the data plane encapsulation in SD-Access",
+            "LISP and SD-Access are competing technologies that cannot be used together",
+            "LISP provides Layer 2 segmentation in the SD-Access fabric",
+            "LISP provides the control plane for endpoint location tracking in SD-Access"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 24.4.6 In the Cisco SD-Access architecture, LISP functions as the control plane, responsible for mapping endpoint identifiers (EIDs) to their current routing locators (RLOCs) in a centralized host tracking database,,. This allows the network to decouple a device's identity from its physical location, facilitating host mobility. While LISP handles the mapping and location tracking, VXLAN is used for the data plane because, unlike standard LISP, VXLAN can encapsulate the original Layer 2 Ethernet headers required for fabric operations,."
+    },
+    {
+        "number": 229,
+        "chapter": "Final Exam",
+        "chapterNumber": 12,
+        "text": "An engineer is configuring IPsec tunnel mode between two sites. Which two statements about IPsec tunnel mode are correct? (Choose two.)",
+        "options": [
+            "Tunnel mode is typically used for site-to-site VPN connections",
+            "Tunnel mode requires the endpoints to be the actual traffic sources",
+            "Only the payload is encrypted while the original IP header remains visible",
+            "The original IP header is encrypted and a new IP header is added",
+            "Tunnel mode provides less overhead than transport mode"
+        ],
+        "correct": [
+            0,
+            3
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 18.3.1 In tunnel mode, the entire original IP packet—including the original header—is encrypted and encapsulated within a completely new IP header. This mode is the standard for site-to-site VPNs because it allows two security gateways (like routers or firewalls) to protect traffic on behalf of other devices, whose original (often private) addresses are hidden inside the encrypted payload. By contrast, transport mode only encrypts the payload and leaves the original IP header visible, which is typically used for direct host-to-host communication."
+    },
+    {
+        "number": 230,
+        "chapter": "Final Exam",
+        "chapterNumber": 13,
+        "text": "Which command would verify that VRF-Lite is properly configured and operational on a Cisco router?",
+        "options": [
+            "show ip vrf interfaces",
+            "show vrf detail",
+            "show ip route",
+            "show ip vrf"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 231,
+        "chapter": "Final Exam",
+        "chapterNumber": 14,
+        "text": "Refer to the exhibit. A network engineer is troubleshooting a trunk link issue. Based on the output, what is causing the problem?",
+        "options": [
+            "Both switches are configured in passive negotiation modes",
+            "The native VLAN mismatch between the switches",
+            "The encapsulation is set to negotiate instead of dot1q",
+            "DTP mode on SW2 is set to auto, which won't initiate trunk negotiation"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-14.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 232,
+        "chapter": "Final Exam",
+        "chapterNumber": 15,
+        "text": "A network engineer needs to configure EtherChannel between two switches. SW1 must actively negotiate the channel while SW2 should only respond to negotiation. Which configuration achieves this using LACP?",
+        "options": [
+            "SW1: channel-group 1 mode passive; SW2: channel-group 1 mode active",
+            "SW1: channel-group 1 mode on; SW2: channel-group 1 mode on",
+            "SW1: channel-group 1 mode desirable; SW2: channel-group 1 mode auto",
+            "SW1: channel-group 1 mode active; SW2: channel-group 1 mode passive"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 233,
+        "chapter": "Final Exam",
+        "chapterNumber": 16,
+        "text": "Refer to the exhibit. A network administrator notices that VLAN 30 traffic is not passing through a trunk link. Based on the output, what is the cause?",
+        "options": [
+            "VLAN 30 is being pruned by VTP",
+            "VLAN 30 is not in the spanning tree forwarding state",
+            "VLAN 30 has been manually removed from the allowed VLAN list",
+            "VLAN 30 does not exist in the VLAN database"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-16.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 234,
+        "chapter": "Final Exam",
+        "chapterNumber": 17,
+        "text": "Which two statements about RSTP port states are correct? (Choose two.)",
+        "options": [
+            "RSTP has five port states: disabled, blocking, listening, learning, and forwarding",
+            "An RSTP port in learning state can forward user traffic",
+            "RSTP backup ports provide an alternate path to the root bridge",
+            "RSTP combines the STP disabled, blocking, and listening states into a single discarding state",
+            "RSTP uses proposal/agreement mechanism for rapid convergence on point-to-point links"
+        ],
+        "correct": [
+            3,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 4.5.7 RSTP uses a proposal/agreement handshake mechanism to transition point-to-point designated ports to a forwarding state almost instantaneously, rather than waiting for traditional timers,. RSTP simplifies the operation of STP by reducing the number of port states from five down to three: discarding, learning, and forwarding. The discarding state effectively combines the functions of the STP disabled, blocking, and listening states,."
+    },
+    {
+        "number": 235,
+        "chapter": "Final Exam",
+        "chapterNumber": 18,
+        "text": "Refer to the exhibit. An engineer is troubleshooting OSPF neighbor adjacency issues. Based on the output, what is preventing the adjacency from forming?",
+        "options": [
+            "The hello and dead timer mismatch",
+            "The OSPF process ID mismatch",
+            "The OSPF area mismatch",
+            "Both routers are claiming DR role"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-18.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 236,
+        "chapter": "Final Exam",
+        "chapterNumber": 19,
+        "text": "Refer to the exhibit. A network engineer is analyzing BGP path selection. Which path will be selected as the best path to reach 10.0.0.0/8?",
+        "options": [
+            "Path 2 - shortest AS_PATH wins",
+            "Path 1 - tie-breaker between Path 1 and Path 3 goes to lower MED",
+            "Path 3 - highest LOCAL_PREF with better MED wins",
+            "Path 1 - highest LOCAL_PREF wins"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-19.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 237,
+        "chapter": "Final Exam",
+        "chapterNumber": 20,
+        "text": "Refer to the exhibit. What does this output indicate about the router's NAT configuration?",
+        "options": [
+            "Dynamic NAT with a pool of addresses is configured",
+            "NAT is not working because all translations use the same global address",
+            "Static NAT is configured for three internal hosts",
+            "PAT (NAT overload) is being used with a single public IP address"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-20.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 238,
+        "chapter": "Final Exam",
+        "chapterNumber": 21,
+        "text": "Which statement correctly describes EIGRP feasible successor?",
+        "options": [
+            "A route that always has a higher metric than the successor route",
+            "A backup route whose reported distance is less than the feasible distance of the successor",
+            "A route that must go through the DUAL algorithm when the successor fails",
+            "A route with the lowest metric to the destination"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 239,
+        "chapter": "Final Exam",
+        "chapterNumber": 22,
+        "text": "Which IGMP version introduced support for source-specific multicast (SSM)?",
+        "options": [
+            "IGMPv2",
+            "IGMPv3",
+            "IGMPv1",
+            "IGMPv4"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 12.3.3 IGMPv3 introduced support for source filtering, which allows a host to specify to a router the specific multicast group it wants to join and the exact source(s) from which it expects to receive traffic. This source-specific registration is the essential mechanism that enables Source-Specific Multicast (SSM). Previous versions (v1 and v2) only allowed a host to request a group regardless of the source."
+    },
+    {
+        "number": 240,
+        "chapter": "Final Exam",
+        "chapterNumber": 23,
+        "text": "Refer to the exhibit. A network administrator is troubleshooting HSRP. What will happen when R1 recovers from a failure?",
+        "options": [
+            "R1 will remain in standby state until R2 fails",
+            "R2 will remain active because it doesn't have preempt configured",
+            "Both routers will become active causing a split-brain scenario",
+            "R1 will become the active router"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-23.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 241,
+        "chapter": "Final Exam",
+        "chapterNumber": 24,
+        "text": "Which two statements about PIM Sparse Mode (PIM-SM) are correct? (Choose two.)",
+        "options": [
+            "PIM-SM requires a Rendezvous Point (RP) for initial tree building",
+            "PIM-SM uses dense mode flooding for the first 3 minutes",
+            "PIM-SM cannot switch from shared tree to source tree",
+            "PIM-SM floods multicast traffic to all interfaces by default",
+            "PIM-SM uses a pull model where multicast traffic is only sent where requested"
+        ],
+        "correct": [
+            0,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 12.5.2 PIM-SM (Sparse Mode) is designed for environments where receivers are scattered across the network. It uses a pull model, meaning traffic is only sent to segments that have explicitly requested it via join messages, rather than flooding the entire network by default. To facilitate this, it requires a Rendezvous Point (RP), which acts as a common meeting place for sources and receivers to build the initial shared distribution tree."
+    },
+    {
+        "number": 242,
+        "chapter": "Final Exam",
+        "chapterNumber": 25,
+        "text": "Which command enables BPDU Guard on a specific interface?",
+        "options": [
+            "SW1(config-if)# spanning-tree guard bpdu",
+            "SW1(config-if)# spanning-tree bpduguard enable",
+            "SW1(config)# spanning-tree bpduguard enable",
+            "SW1(config)# spanning-tree portfast bpduguard"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 4.8.1 To enable BPDU Guard on a specific interface, you must enter interface configuration mode and use the command spanning-tree bpduguard enable,. This feature is designed to protect PortFast-enabled access ports by automatically disabling the port (putting it in an err-disable state) if it receives a BPDU, preventing potential loops caused by unauthorized switches being connected to the network,."
+    },
+    {
+        "number": 243,
+        "chapter": "Final Exam",
+        "chapterNumber": 26,
+        "text": "A network engineer needs to filter OSPF routes being advertised to a neighbor. Which configuration method should be used?",
+        "options": [
+            "Apply a distribute-list with an ACL to filter specific routes",
+            "OSPF cannot filter routes; all LSAs must be flooded",
+            "Configure area range with the not-advertise option on an ABR",
+            "Use route-maps to set the metric to infinity"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 244,
+        "chapter": "Final Exam",
+        "chapterNumber": 27,
+        "text": "Refer to the exhibit. Based on the EIGRP topology table output, which route is the feasible successor for network 10.1.1.0/24?",
+        "options": [
+            "192.168.2.2 with reported distance 28672",
+            "192.168.1.2 with metric 28160",
+            "192.168.3.2 with reported distance 25600",
+            "There is no feasible successor; only successors exist"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-27.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 245,
+        "chapter": "Final Exam",
+        "chapterNumber": 28,
+        "text": "Which two commands can verify that NAT is working correctly on a Cisco router? (Choose two.)",
+        "options": [
+            "show ip nat translations",
+            "debug ip nat",
+            "show ip nat statistics",
+            "show ip route nat",
+            "show running-config | include nat"
+        ],
+        "correct": [
+            0,
+            2
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 246,
+        "chapter": "Final Exam",
+        "chapterNumber": 29,
+        "text": "Refer to the exhibit. A network engineer is configuring NetFlow to export flow data. What is missing from this configuration?",
+        "options": [
+            "The NetFlow version is not specified in the exporter",
+            "The flow monitor associating the record with the exporter is not configured",
+            "The source interface for the exporter is not configured",
+            "The interface needs both input and output flow monitoring"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-29.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 247,
+        "chapter": "Final Exam",
+        "chapterNumber": 30,
+        "text": "A network engineer wants to capture traffic between two hosts for analysis but the traffic doesn't pass through the engineer's workstation. Which technology should be configured?",
+        "options": [
+            "RSPAN with a dedicated VLAN for mirrored traffic",
+            "Local SPAN on the switch connecting the hosts",
+            "ERSPAN encapsulating mirrored traffic in GRE",
+            "NetFlow export to the engineer's workstation"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 248,
+        "chapter": "Final Exam",
+        "chapterNumber": 31,
+        "text": "Refer to the exhibit. What does this syslog message indicate?",
+        "options": [
+            "A notification-level message about an interface state change",
+            "A debugging message for troubleshooting purposes",
+            "An emergency condition requiring immediate action",
+            "An error condition that needs investigation"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-31.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 249,
+        "chapter": "Final Exam",
+        "chapterNumber": 32,
+        "text": "Which SNMP version provides authentication using usernames and passwords along with encryption for data privacy?",
+        "options": [
+            "SNMPv3 with authNoPriv security level",
+            "SNMPv1 with community strings",
+            "SNMPv2c with community strings",
+            "SNMPv3 with authPriv security level"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 250,
+        "chapter": "Final Exam",
+        "chapterNumber": 33,
+        "text": "Which three capabilities does Cisco Catalyst Center Assurance provide? (Choose three.)",
+        "options": [
+            "End-to-end path trace visualization",
+            "Direct CLI access to all managed devices",
+            "Automated configuration deployment to network devices",
+            "Streaming telemetry for real-time device monitoring",
+            "Software image distribution and upgrade",
+            "AI/ML-driven insights for proactive issue detection"
+        ],
+        "correct": [
+            0,
+            3,
+            5
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 251,
+        "chapter": "Final Exam",
+        "chapterNumber": 34,
+        "text": "Refer to the exhibit. An engineer is troubleshooting SSH access issues. Based on the configuration, what is preventing SSH connections?",
+        "options": [
+            "Only hosts from 192.168.1.0/24 can establish SSH connections",
+            "The VTY lines are not configured for local authentication",
+            "The explicit deny statement is blocking all traffic",
+            "SSH is not enabled on the router"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-34.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 252,
+        "chapter": "Final Exam",
+        "chapterNumber": 35,
+        "text": "Which two statements about AAA authentication are correct? (Choose two.)",
+        "options": [
+            "Local database authentication requires a RADIUS server",
+            "Authentication verifies user identity before granting access",
+            "AAA authentication must be configured before authorization",
+            "RADIUS encrypts the entire packet payload between client and server",
+            "TACACS+ separates authentication, authorization, and accounting functions"
+        ],
+        "correct": [
+            1,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 253,
+        "chapter": "Final Exam",
+        "chapterNumber": 36,
+        "text": "Which command sequence correctly configures a RADIUS server for AAA authentication on a Cisco IOS device?",
+        "options": [
+            "R1(config)# radius server RADIUS1<br>R1(config-radius-server)# address ipv4 10.1.1.100 auth-port 1812 acct-port 1813<br>R1(config-radius-server)# key SecretKey",
+            "R1(config)# aaa new-model<br>R1(config)# radius server 10.1.1.100 key SecretKey",
+            "R1(config)# authentication radius-server 10.1.1.100 key SecretKey",
+            "R1(config)# radius-server host 10.1.1.100 key SecretKey"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 254,
+        "chapter": "Final Exam",
+        "chapterNumber": 37,
+        "text": "Which Control Plane Policing (CoPP) action should be applied to protect against SSH brute-force attacks while still allowing legitimate SSH access?",
+        "options": [
+            "Permit SSH traffic without any restrictions",
+            "Police SSH traffic to a reasonable rate limit",
+            "Drop all SSH traffic to the control plane",
+            "Mark SSH traffic with a higher DSCP value"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 14.9.1 Control Plane Policing (CoPP) is designed to prevent the CPU from being overwhelmed by low-priority or malicious traffic. By using a police statement within a policy map, you can specify a maximum traffic rate for SSH (TCP port 22). This allows legitimate management sessions to conform and be transmitted, while excessive traffic—such as the high-volume packet floods generated during a brute-force or DoS attack—will exceed the limit and be dropped."
+    },
+    {
+        "number": 255,
+        "chapter": "Final Exam",
+        "chapterNumber": 38,
+        "text": "Which two security features protect the network infrastructure from unauthorized devices connecting to switch ports? (Choose two.)",
+        "options": [
+            "Port security with MAC address limiting",
+            "Storm control",
+            "BPDU Guard",
+            "DHCP snooping",
+            "802.1X port-based authentication"
+        ],
+        "correct": [
+            0,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 15.16.0, 15.7.0 and 15.17.2 802.1X port-based authentication is the foundation for network access control; it requires a device to provide valid credentials to an authentication server (like Cisco ISE) before the switch port is transitioned to an authorized state. Port security is a Layer 2 feature that protects the infrastructure by limiting the number of MAC addresses allowed on a single port or by binding a port to a specific, authorized MAC address. If an unauthorized device (with an unknown or excessive MAC) is detected, the switch can automatically disable the port to prevent access."
+    },
+    {
+        "number": 256,
+        "chapter": "Final Exam",
+        "chapterNumber": 39,
+        "text": "Refer to the exhibit. What type of security threat does this configuration help prevent?",
+        "options": [
+            "ARP spoofing attacks",
+            "VLAN hopping attacks",
+            "MAC address spoofing attacks",
+            "Rogue DHCP server attacks"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-39.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 257,
+        "chapter": "Final Exam",
+        "chapterNumber": 40,
+        "text": "Which AAA accounting record type captures information about commands executed by administrators?",
+        "options": [
+            "Command accounting",
+            "EXEC accounting",
+            "Connection accounting",
+            "Network accounting"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 258,
+        "chapter": "Final Exam",
+        "chapterNumber": 41,
+        "text": "Refer to the exhibit. A security engineer is reviewing the AAA configuration. What method will be used if the RADIUS server is unreachable? (Choose two.)",
+        "options": [
+            "VTY access will fall back to local database authentication",
+            "Console access will use the local database",
+            "Console access will use RADIUS for authentication",
+            "VTY access will be denied if RADIUS is unreachable",
+            "The 'none' keyword allows access without authentication if all methods fail"
+        ],
+        "correct": [
+            0,
+            1
+        ],
+        "multi": true,
+        "special": false,
+        "image": "images/questions/final-exam-41.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 259,
+        "chapter": "Final Exam",
+        "chapterNumber": 42,
+        "text": "Which security technology would best protect against a man-in-the-middle attack on the local network segment?",
+        "options": [
+            "Dynamic ARP Inspection (DAI)",
+            "Private VLANs",
+            "Port security with sticky MAC addresses",
+            "ACLs filtering unauthorized IP addresses"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 15.2.1 Man-in-the-middle (MitM) attacks are complex threats where an attacker imposes themselves into the communication path between two systems to view or modify traffic. These attacks typically require the exploitation of local network protocols such as ARP, DNS, or DHCP to successfully misdirect traffic. Dynamic ARP Inspection (DAI) is the specific security technology designed to protect against these attacks on the local network segment by validating ARP packets, thereby preventing \"ARP poisoning\" or spoofing, which is the primary method used to achieve a MitM position at the data link layer."
+    },
+    {
+        "number": 260,
+        "chapter": "Final Exam",
+        "chapterNumber": 43,
+        "text": "Which two components are part of Cisco's Zero Trust security architecture? (Choose two.)",
+        "options": [
+            "Trust all internal network traffic by default",
+            "Network segmentation based on user identity and device posture",
+            "Single perimeter-based firewall for all security",
+            "Implicit trust for users once they pass initial authentication",
+            "Continuous verification of user and device identity"
+        ],
+        "correct": [
+            1,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 261,
+        "chapter": "Final Exam",
+        "chapterNumber": 44,
+        "text": "Refer to the exhibit. What will be the output of this Python script?",
+        "options": [
+            "Device 1: router1<br>Device 2: SWITCH1<br>Device 3: firewall1",
+            "Device 0: router1<br>Device 1: SWITCH1<br>Device 2: firewall1",
+            "Device 0: ROUTER1<br>Device 1: SWITCH1<br>Device 2: FIREWALL1",
+            "Error: enumerate() does not work with lists"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-44.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 262,
+        "chapter": "Final Exam",
+        "chapterNumber": 45,
+        "text": "Which NETCONF operation retrieves only the configuration data from a device?",
+        "options": [
+            "&lt;edit-config&gt;",
+            "&lt;get&gt;",
+            "&lt;copy-config&gt;",
+            "&lt;get-config&gt;"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 263,
+        "chapter": "Final Exam",
+        "chapterNumber": 46,
+        "text": "Refer to the exhibit. What is the purpose of this EEM applet?",
+        "options": [
+            "To monitor interface Gi0/1 and log when it goes down",
+            "To prevent Gi0/1 from going down by bouncing Gi0/2",
+            "To automatically bounce Gi0/2 when Gi0/1 goes down",
+            "To synchronize the state of Gi0/1 and Gi0/2"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-46.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 264,
+        "chapter": "Final Exam",
+        "chapterNumber": 47,
+        "text": "Which HTTP method is used by RESTCONF to create a new resource that does not already exist?",
+        "options": [
+            "GET",
+            "PUT",
+            "POST",
+            "PATCH"
+        ],
+        "correct": [
+            2
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 265,
+        "chapter": "Final Exam",
+        "chapterNumber": 48,
+        "text": "Refer to the exhibit. What does this JSON response from a REST API indicate?",
+        "options": [
+            "The API request was accepted and a task was created to process it",
+            "The API returned configuration data from the device",
+            "The API request failed with an error",
+            "The API is returning a list of available endpoints"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-48.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 266,
+        "chapter": "Final Exam",
+        "chapterNumber": 49,
+        "text": "Which two tools are considered agentless for configuration management? (Choose two.)",
+        "options": [
+            "Puppet",
+            "Chef",
+            "Salt (with SSH)",
+            "CFEngine",
+            "Ansible"
+        ],
+        "correct": [
+            2,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 267,
+        "chapter": "Final Exam",
+        "chapterNumber": 50,
+        "text": "Which two statements correctly describe the Cisco Catalyst Center Platform APIs? (Choose two.)",
+        "options": [
+            "Integration APIs enable third-party applications to receive network events",
+            "Intent APIs allow network administrators to express business intent",
+            "All API operations are synchronous and return results immediately",
+            "APIs use SOAP for all communication",
+            "APIs require SNMP credentials for device access"
+        ],
+        "correct": [
+            0,
+            1
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 268,
+        "chapter": "Final Exam",
+        "chapterNumber": 51,
+        "text": "Which two statements correctly describe Type 1 and Type 2 hypervisors? (Choose two.)",
+        "options": [
+            "Type 1 hypervisors run directly on hardware without a host operating system",
+            "Type 1 hypervisors are also known as hosted hypervisors",
+            "VMware ESXi is an example of a Type 2 hypervisor",
+            "Type 2 hypervisors provide better performance than Type 1 for enterprise workloads",
+            "Type 2 hypervisors run as applications on top of a host operating system"
+        ],
+        "correct": [
+            0,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 17.2.2 A Type 1 hypervisor (also called bare-metal) is installed directly on the physical server hardware instead of a host operating system, acting as a lightweight OS to manage virtual machines and allocate physical resources. VMware ESXi is a prominent example of a Type 1 hypervisor. Type 2 hypervisors (hosted) differ because they run as software applications on top of a conventional host operating system. Because Type 1 hypervisors have direct access to hardware without the overhead of a host OS, they provide significantly better performance and efficiency for enterprise workloads."
+    },
+    {
+        "number": 269,
+        "chapter": "Final Exam",
+        "chapterNumber": 52,
+        "text": "Refer to the exhibit. A network engineer is implementing MST (Multiple Spanning Tree). What is the result of this configuration? (Choose four.)",
+        "options": [
+            "The configuration requires matching name and revision on all MST switches",
+            "Each VLAN will have its own independent spanning tree calculation",
+            "VLANs 10, 20, and 30 will share a single spanning tree instance",
+            "MST reduces CPU and memory usage compared to PVST+",
+            "VLANs not explicitly mapped will be assigned to instance 0 (IST)"
+        ],
+        "correct": [
+            0,
+            2,
+            3,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "images/questions/final-exam-52.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 270,
+        "chapter": "Final Exam",
+        "chapterNumber": 53,
+        "text": "A network engineer is configuring eBGP between a company's edge router (AS 65001) and an ISP router (AS 65002). Which three configuration elements should the engineer verify? (Choose three.)",
+        "options": [
+            "The BGP router ID is configured to match the ISP router's BGP router ID",
+            "The update-source command matches the interface used to reach the ISP peer",
+            "The BGP timers are synchronized with the IGP protocol timers",
+            "An ACL or firewall is not blocking TCP port 179 between the peers",
+            "The eBGP multihop setting is configured if the peers are not directly connected",
+            "The neighbor remote-as command specifies AS 65002 for the ISP peer"
+        ],
+        "correct": [
+            3,
+            4,
+            5
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 11.2.1, 11.4.1 and 11.7.1 For an eBGP session to establish successfully, the routers must first be able to complete a TCP three-way handshake using port 179; any security device or ACL blocking this port will prevent the session from starting. The engineer must also explicitly define the neighbor using the neighbor remote-as command, ensuring the AS number matches the peer's actual AS (65002), or the session will be terminated. Finally, by default, eBGP neighbors must be directly connected; if they are peering via non-directly connected interfaces (like loopbacks), the eBGP multihop setting must be enabled to allow the TTL check to pass."
+    },
+    {
+        "number": 271,
+        "chapter": "Final Exam",
+        "chapterNumber": 54,
+        "text": "Which three options are valid components of a Cisco IP SLA operation? (Choose three.)",
+        "options": [
+            "OSPF operation to measure SPF calculation time",
+            "BGP operation to measure route convergence",
+            "UDP Jitter operation to measure one-way delay and jitter",
+            "ICMP Echo operation to measure round-trip time",
+            "HTTP operation to measure web server response time",
+            "SNMP operation to measure MIB response time"
+        ],
+        "correct": [
+            2,
+            3,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 272,
+        "chapter": "Final Exam",
+        "chapterNumber": 55,
+        "text": "A network engineer needs to create an automated response when an interface goes down. Which Cisco IOS feature should be used?",
+        "options": [
+            "Syslog server with alerting",
+            "Embedded Event Manager (EEM)",
+            "SNMP trap configuration",
+            "IP SLA with tracking"
+        ],
+        "correct": [
+            1
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 19.10.1 Cisco IOS EEM is a powerful subsystem designed specifically to automate tasks and customize device behavior by responding to real-time events. It uses event detectors (such as a syslog pattern matching an interface state change) to trigger an action list, which can include executing CLI commands (like no shutdown), sending emails, or generating SNMP traps locally on the device. While features like Syslog and SNMP traps provide notifications to external servers, EEM is the primary tool for taking local automated action based on those events."
+    },
+    {
+        "number": 273,
+        "chapter": "Final Exam",
+        "chapterNumber": 56,
+        "text": "Refer to the exhibit. What is the effect of this ACL when applied outbound on interface GigabitEthernet0/1? (Choose four.)",
+        "options": [
+            "Return traffic for HTTP sessions will be permitted",
+            "Hosts on 192.168.10.0/24 can respond to ping requests",
+            "All denied traffic will be logged",
+            "Hosts on 192.168.10.0/24 can access HTTPS websites",
+            "Hosts on 192.168.10.0/24 can initiate ping requests"
+        ],
+        "correct": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "multi": true,
+        "special": false,
+        "image": "images/questions/final-exam-56.svg",
+        "table": [],
+        "explanation": "Topic 14.7.1"
+    },
+    {
+        "number": 274,
+        "chapter": "Final Exam",
+        "chapterNumber": 57,
+        "text": "A network administrator needs to ensure that only encrypted management protocols are used to access network devices. Which two protocols should be permitted? (Choose two.)",
+        "options": [
+            "HTTPS on port 443",
+            "TFTP on port 69",
+            "Telnet on port 23",
+            "HTTP on port 80",
+            "SSH on port 22"
+        ],
+        "correct": [
+            0,
+            4
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 275,
+        "chapter": "Final Exam",
+        "chapterNumber": 58,
+        "text": "Which statement correctly describes MACsec (Media Access Control Security)?",
+        "options": [
+            "MACsec provides Layer 2 hop-by-hop encryption on LAN links",
+            "MACsec is an authentication protocol that replaces 802.1X",
+            "MACsec provides Layer 3 encryption between sites over the WAN",
+            "MACsec encrypts traffic between endpoints regardless of network hops"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": "Topic 15.14.0 MACsec (IEEE 802.1AE) is a standards-based security technology that provides data confidentiality and integrity by performing Layer 2 hop-by-hop encryption on wired LAN links. This means it encrypts the entire Ethernet frame between two directly connected devices. It is implemented using the 802.1X Extensible Authentication Protocol (EAP) framework to manage session keys through the MACsec Key Agreement (MKA) protocol, rather than replacing it. Unlike Layer 3 solutions like IPsec, which encrypt the packet payload for transport across multiple network hops, MACsec is specifically designed for point-to-point protection at the data link layer."
+    },
+    {
+        "number": 276,
+        "chapter": "Final Exam",
+        "chapterNumber": 59,
+        "text": "Which two statements about YANG data models are correct? (Choose two.)",
+        "options": [
+            "YANG defines the structure of configuration and operational data",
+            "YANG uses a hierarchical tree structure to organize data",
+            "YANG is a protocol for transporting configuration data",
+            "YANG models are specific to Cisco devices only",
+            "YANG directly executes configuration changes on devices"
+        ],
+        "correct": [
+            0,
+            1
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 277,
+        "chapter": "Final Exam",
+        "chapterNumber": 60,
+        "text": "Which REST API response code indicates that the request was successful and a new resource was created?",
+        "options": [
+            "201 Created",
+            "202 Accepted",
+            "200 OK",
+            "204 No Content"
+        ],
+        "correct": [
+            0
+        ],
+        "multi": false,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 278,
+        "chapter": "Final Exam",
+        "chapterNumber": 61,
+        "text": "Refer to the exhibit. A network engineer is reviewing the enterprise campus design. Which three statements accurately describe this topology? (Choose three.)",
+        "options": [
+            "The core layer should provide the highest switching speeds",
+            "This represents a collapsed core design",
+            "This represents a 3-tier hierarchical design model",
+            "The distribution layer provides routing and policy enforcement",
+            "End-user devices should connect directly to the distribution layer"
+        ],
+        "correct": [
+            0,
+            2,
+            3
+        ],
+        "multi": true,
+        "special": false,
+        "image": "images/questions/final-exam-61.svg",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 279,
+        "chapter": "Final Exam",
+        "chapterNumber": 62,
+        "text": "Which two OSPF network types require manual neighbor configuration? (Choose two.)",
+        "options": [
+            "Point-to-point",
+            "Point-to-multipoint",
+            "Non-broadcast",
+            "Point-to-multipoint non-broadcast",
+            "Broadcast"
+        ],
+        "correct": [
+            2,
+            3
+        ],
+        "multi": true,
+        "special": false,
+        "image": "",
+        "table": [],
+        "explanation": ""
+    },
+    {
+        "number": 280,
+        "chapter": "Final Exam",
+        "chapterNumber": 63,
+        "text": "Refer to the exhibit. A network engineer is configuring a GRE tunnel between two sites. Based on the configuration, what is missing or incorrect?",
+        "options": [
+            "The tunnel mode GRE IP command is missing on both routers",
+            "The tunnel interface IP addresses must be on the same subnet as the physical interfaces",
+            "The tunnel destination on R2 should be 203.0.113.2",
+            "The tunnel destination configured on R1 does not match the tunnel source IP address of R2"
+        ],
+        "correct": [
+            3
+        ],
+        "multi": false,
+        "special": false,
+        "image": "images/questions/final-exam-63.svg",
+        "table": [],
+        "explanation": ""
     }
 ]

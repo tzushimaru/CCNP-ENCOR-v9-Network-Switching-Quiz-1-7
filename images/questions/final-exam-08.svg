@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="573" height="248" viewBox="0 0 573 248">
+  <rect width="573" height="248" fill="#ffffff"/>
+  <rect width="573" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Traffic Analysis:</text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Flow 1: DSCP EF (46), 2 Mbps - VoIP</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Flow 2: DSCP AF41 (34), 5 Mbps - Video Conferencing</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Flow 3: DSCP AF21 (18), 10 Mbps - Business Applications</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Flow 4: DSCP CS1 (8), 15 Mbps - Bulk Data</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Flow 5: DSCP 0, 20 Mbps - Best Effort</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="430" viewBox="0 0 560 430">
+  <rect width="560" height="430" fill="#ffffff"/>
+  <rect width="560" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Outer Ethernet Header:</text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Dst MAC: 00:50:56:89:12:34</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Src MAC: 00:50:56:89:56:78</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Outer IP Header:</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Src IP: 10.1.1.1 (VTEP1)</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Dst IP: 10.1.1.2 (VTEP2)</text>
+  <text x="28" y="240" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Outer UDP Header:</text>
+  <text x="28" y="266" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Src Port: 49152</text>
+  <text x="28" y="292" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Dst Port: 4789</text>
+  <text x="28" y="318" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">VXLAN Header:</text>
+  <text x="28" y="344" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  VNI: 10010</text>
+  <text x="28" y="370" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Inner Ethernet Frame:</text>
+  <text x="28" y="396" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Original L2 frame from VM</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="404" viewBox="0 0 560 404">
+  <rect width="560" height="404" fill="#ffffff"/>
+  <rect width="560" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">aaa new-model</text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">aaa authentication login default group radius local</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">aaa authentication login CONSOLE local</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">!</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">radius server RADIUS1</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> address ipv4 10.1.1.100 auth-port 1812</text>
+  <text x="28" y="240" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> key Cisco123</text>
+  <text x="28" y="266" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">!</text>
+  <text x="28" y="292" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">line console 0</text>
+  <text x="28" y="318" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> login authentication CONSOLE</text>
+  <text x="28" y="344" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">line vty 0 4</text>
+  <text x="28" y="370" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> login authentication default</text>
+</svg>

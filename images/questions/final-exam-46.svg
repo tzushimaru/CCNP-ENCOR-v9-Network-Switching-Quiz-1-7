@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="695" height="300" viewBox="0 0 695 300">
+  <rect width="695" height="300" fill="#ffffff"/>
+  <rect width="695" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">event manager applet INTERFACE-DOWN</text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> event syslog pattern "LINEPROTO-5-UPDOWN.*GigabitEthernet0/1.*down"</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> action 1.0 cli command "enable"</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> action 2.0 cli command "configure terminal"</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> action 3.0 cli command "interface GigabitEthernet0/2"</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> action 4.0 cli command "shutdown"</text>
+  <text x="28" y="240" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> action 5.0 cli command "no shutdown"</text>
+  <text x="28" y="266" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve"> action 6.0 syslog msg "Bounced Gi0/2 due to Gi0/1 down event"</text>
+</svg>

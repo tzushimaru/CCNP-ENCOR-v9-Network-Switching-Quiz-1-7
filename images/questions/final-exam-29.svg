@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="582" height="456" viewBox="0 0 582 456">
+  <rect width="582" height="456" fill="#ffffff"/>
+  <rect width="582" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config)#</tspan><tspan fill="#111111"> flow record CUSTOM-RECORD</tspan></text>
+  <text x="28" y="110" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-record)#</tspan><tspan fill="#111111"> match ipv4 source address</tspan></text>
+  <text x="28" y="136" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-record)#</tspan><tspan fill="#111111"> match ipv4 destination address</tspan></text>
+  <text x="28" y="162" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-record)#</tspan><tspan fill="#111111"> match transport source-port</tspan></text>
+  <text x="28" y="188" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-record)#</tspan><tspan fill="#111111"> match transport destination-port</tspan></text>
+  <text x="28" y="214" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-record)#</tspan><tspan fill="#111111"> collect counter bytes</tspan></text>
+  <text x="28" y="240" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-record)#</tspan><tspan fill="#111111"> collect counter packets</tspan></text>
+  <text x="28" y="266" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">!</text>
+  <text x="28" y="292" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config)#</tspan><tspan fill="#111111"> flow exporter EXPORTER-1</tspan></text>
+  <text x="28" y="318" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-exporter)#</tspan><tspan fill="#111111"> destination 10.1.1.100</tspan></text>
+  <text x="28" y="344" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-flow-exporter)#</tspan><tspan fill="#111111"> transport udp 9995</tspan></text>
+  <text x="28" y="370" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">!</text>
+  <text x="28" y="396" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config)#</tspan><tspan fill="#111111"> interface GigabitEthernet0/0</tspan></text>
+  <text x="28" y="422" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-if)#</tspan><tspan fill="#111111"> ip flow monitor MONITOR-1 input</tspan></text>
+</svg>

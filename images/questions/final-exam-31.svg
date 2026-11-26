@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="892" height="118" viewBox="0 0 892 118">
+  <rect width="892" height="118" fill="#ffffff"/>
+  <rect width="892" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down</text>
+</svg>

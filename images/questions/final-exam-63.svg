@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="326" viewBox="0 0 560 326">
+  <rect width="560" height="326" fill="#ffffff"/>
+  <rect width="560" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config)#</tspan><tspan fill="#111111"> interface Tunnel0</tspan></text>
+  <text x="28" y="110" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-if)#</tspan><tspan fill="#111111"> ip address 172.16.1.1 255.255.255.252</tspan></text>
+  <text x="28" y="136" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-if)#</tspan><tspan fill="#111111"> tunnel source GigabitEthernet0/0</tspan></text>
+  <text x="28" y="162" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1(config-if)#</tspan><tspan fill="#111111"> tunnel destination 203.0.113.2</tspan></text>
+  <text x="28" y="214" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R2(config)#</tspan><tspan fill="#111111"> interface Tunnel0</tspan></text>
+  <text x="28" y="240" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R2(config-if)#</tspan><tspan fill="#111111"> ip address 172.16.1.2 255.255.255.252</tspan></text>
+  <text x="28" y="266" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R2(config-if)#</tspan><tspan fill="#111111"> tunnel source 198.51.100.1</tspan></text>
+  <text x="28" y="292" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R2(config-if)#</tspan><tspan fill="#111111"> tunnel destination 203.0.113.1</tspan></text>
+</svg>

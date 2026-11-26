@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="761" height="378" viewBox="0 0 761 378">
+  <rect width="761" height="378" fill="#ffffff"/>
+  <rect width="761" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">DSW1#</tspan><tspan fill="#111111"> show standby brief</tspan></text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">                     P indicates configured to preempt.</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">                     |</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Interface   Grp  Pri P State   Active          Standby         Virtual IP</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Vl10        1    110 P Active  local           192.168.10.3    192.168.10.1</text>
+  <text x="28" y="240" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">DSW2#</tspan><tspan fill="#111111"> show standby brief</tspan></text>
+  <text x="28" y="266" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">                     P indicates configured to preempt.</text>
+  <text x="28" y="292" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">                     |</text>
+  <text x="28" y="318" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Interface   Grp  Pri P State   Active          Standby         Virtual IP</text>
+  <text x="28" y="344" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">Vl10        1    100   Standby 192.168.10.2    local           192.168.10.1</text>
+</svg>

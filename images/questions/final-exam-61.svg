@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="274" viewBox="0 0 560 274">
+  <rect width="560" height="274" fill="#ffffff"/>
+  <rect width="560" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">                    [Core Layer]</text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">                    /          \</text>
+  <text x="28" y="136" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">        [Distribution]        [Distribution]</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">              /    \               /    \</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">        [Access]  [Access]   [Access]  [Access]</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">           |         |          |         |</text>
+  <text x="28" y="240" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">         [PCs]     [VoIP]     [APs]    [Servers]</text>
+</svg>

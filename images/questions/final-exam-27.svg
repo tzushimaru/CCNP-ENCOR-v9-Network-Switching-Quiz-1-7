@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="723" height="482" viewBox="0 0 723 482">
+  <rect width="723" height="482" fill="#ffffff"/>
+  <rect width="723" height="48" fill="#eeeeee"/>
+  <text x="24" y="31" fill="#222222" font-family="Arial, sans-serif" font-size="20">›_ Exhibit</text>
+  <text x="28" y="84" font-family="Consolas, monospace" font-size="17" xml:space="preserve"><tspan fill="#16a34a">R1#</tspan><tspan fill="#111111"> show ip eigrp topology 10.1.1.0/24</tspan></text>
+  <text x="28" y="110" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">IP-EIGRP topology table for AS(100)/ID(1.1.1.1)</text>
+  <text x="28" y="162" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">IP-EIGRP topology entry for 10.1.1.0/24</text>
+  <text x="28" y="188" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  State is Passive, Query origin flag is 1, 2 Successor(s), FD is 28160</text>
+  <text x="28" y="214" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  Routing Descriptor Blocks:</text>
+  <text x="28" y="240" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  192.168.1.2 (GigabitEthernet0/0), from 192.168.1.2, Send flag is 0x0</text>
+  <text x="28" y="266" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">      Composite metric is (28160/27136), Route is Internal</text>
+  <text x="28" y="292" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">      Vector metric:</text>
+  <text x="28" y="318" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">        Minimum bandwidth is 1000000 Kbit</text>
+  <text x="28" y="344" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">        Total delay is 110 microseconds</text>
+  <text x="28" y="370" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  192.168.2.2 (GigabitEthernet0/1), from 192.168.2.2, Send flag is 0x0</text>
+  <text x="28" y="396" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">      Composite metric is (30720/28672), Route is Internal</text>
+  <text x="28" y="422" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">  192.168.3.2 (GigabitEthernet0/2), from 192.168.3.2, Send flag is 0x0</text>
+  <text x="28" y="448" fill="#111111" font-family="Consolas, monospace" font-size="17" xml:space="preserve">      Composite metric is (33280/25600), Route is Internal</text>
+</svg>
